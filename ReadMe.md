@@ -10,7 +10,6 @@ ReactJS developer And I worked on several projects and you can see a few my proj
 * 🖥️  See my portfolio at [UP-TO-CODE](http://ahmedmansour123.vercel.app/)
 * ✉️  You can contact me at [133324agh@gmail.com](mailto:133324agh@gmail.com)
 * 🚀  I'm currently working on [blog-app](http://blog-app-beta-lac.vercel.app)
-* * 🚀  I'm currently working on [blog-app](http://blog-app-beta-lac.vercel.app)
 *  📃  I'm currently working on [CV](https://firebasestorage.googleapis.com/v0/b/my-website-310.appspot.com/o/cv.pdf?alt=media&token=58531fbb-4514-437d-b8a7-22ca948e883f)
 * 🧠  I'm learning Next js
 * 🤝  I'm open to collaborating on anytime
