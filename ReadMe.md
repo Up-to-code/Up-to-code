@@ -7,10 +7,10 @@ Frontend developer
 ReactJS developer And I worked on several projects and you can see a few my projects and YouTuber
 
 * 🌍  I'm based in Egypt
-* 🖥️  See my portfolio at [UP-TO-CODE](http://ahmedmansour123.vercel.app/)
-* ✉️  You can contact me at [133324agh@gmail.com](mailto:133324agh@gmail.com)
-* 🚀  I'm currently working on [blog-app](http://blog-app-beta-lac.vercel.app)
-*  📃  I'm currently working on [CV](https://firebasestorage.googleapis.com/v0/b/my-website-310.appspot.com/o/cv.pdf?alt=media&token=58531fbb-4514-437d-b8a7-22ca948e883f)
+* 🖥️  See my portfolio at [UP-TO-CODE](http://ahmedmansour.vercel.app/)
+* ✉️  You can contact me at [ahmedmansourfrotend@gmail.com](mailto:ahmedmansourfrotend@gmail.com)
+* 🚀  I'm currently working on [e-commence-app](https://github.com/Up-to-code/e-commerce)
+*  📃  I'm currently working on [CV](https://firebasestorage.googleapis.com/v0/b/my-website-310.appspot.com/o/cv.pdf?alt=media&token=f3e516c9-51a3-41ac-963d-2fb4ff12084a)
 * 🧠  I'm learning Next js
 * 🤝  I'm open to collaborating on anytime
 
