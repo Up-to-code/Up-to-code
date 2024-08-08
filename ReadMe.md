@@ -8,10 +8,10 @@ ReactJS developer And I worked on several projects and you can see a few my proj
 
 * 🌍  I'm based in Egypt
 * 🖥️  See my portfolio at [UP-TO-CODE](http://ahmedmansour.vercel.app/)
-* ✉️  You can contact me at [ahmedmansourfrotend@gmail.com](mailto:ahmedmansourfrotend@gmail.com)
-* 🚀  I'm currently working on [e-commence-app](https://github.com/Up-to-code/e-commerce)
-*  📃  I'm currently working on [CV](https://firebasestorage.googleapis.com/v0/b/my-website-310.appspot.com/o/cv.pdf?alt=media&token=f3e516c9-51a3-41ac-963d-2fb4ff12084a)
-* 🧠  I'm learning Next js
+* ✉️  You can contact me at [uptocodejs@gmail.com](mailto:uptocodejs@gmail.com)
+* 🚀  I'm currently working on [Fifty](https://github.com/Up-to-code/e-commerce)
+*  📃  I'm currently working on [CV](https://github.com/Up-to-code/Fifty)
+* 🧠  I'm learning SaaS 
 * 🤝  I'm open to collaborating on anytime
 
 ### Skills
