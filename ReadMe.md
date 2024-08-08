@@ -7,10 +7,10 @@ Frontend developer
 ReactJS developer And I worked on several projects and you can see a few my projects and YouTuber
 
 * 🌍  I'm based in Egypt
-* 🖥️  See my portfolio at [UP-TO-CODE](http://ahmedmansour.vercel.app/)
+* 🖥️  See my portfolio at [UP-TO-CODE](https://ahmed-dev.vercel.app/)
 * ✉️  You can contact me at [uptocodejs@gmail.com](mailto:uptocodejs@gmail.com)
-* 🚀  I'm currently working on [Fifty](https://github.com/Up-to-code/e-commerce)
-*  📃  I'm currently working on [CV](https://github.com/Up-to-code/Fifty)
+* 🚀  I'm currently working on [Fifty](https://github.com/Up-to-code/Fifty)
+*  📃  I'm currently working on [CV](https://ahmed-dev.vercel.app/)
 * 🧠  I'm learning SaaS 
 * 🤝  I'm open to collaborating on anytime
 
