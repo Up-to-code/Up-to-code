@@ -1,45 +1,56 @@
-# 👋 Hi, I'm Ahmed Mansour
+# 🌟 Hey There! I'm Ahmed Mansour 👋
+
+### 🖥️ **Frontend Developer | React Enthusiast | YouTuber**
+I'm a passionate developer from Egypt who loves building amazing web experiences. I enjoy learning, creating, and sharing my knowledge with others. Let's make the web a more delightful place together! 💻✨
 
 ---
 
-### 🔥 Quick Facts
-- 🌍 Location: Cairo, Egypt  
-- 🌐 Portfolio: [UP-TO-CODE](https://ahmed-dev.vercel.app/)  
-- 📬 Contact: [uptocodejs@gmail.com](mailto:uptocodejs@gmail.com)  
-- 🚀 Current Project: [Fifty](https://github.com/Up-to-code/Fifty)  
-- 🎥 YouTube Channel: [Ahmed Dev](https://youtube.com)  
-- 🎓 Learning: SaaS, Advanced React, Microservices  
+### 🛠️ **A Little About Me:**
+- 🌍 **Location:** Cairo, Egypt
+- 💼 **Portfolio:** [UP-TO-CODE](https://ahmed-dev.vercel.app/)  
+- ✉️ **Reach Me:** [uptocodejs@gmail.com](mailto:uptocodejs@gmail.com)  
+- 🚀 **Current Focus:** [Fifty Project](https://github.com/Up-to-code/Fifty)  
+- 🎨 **Passionate About:** Beautiful, functional UIs and slick animations
+- 💡 **Learning:** SaaS, Advanced React, and Microservices  
 
 ---
 
-### 🛠️ Skills
-<p align="left">
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a> 
-<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a> 
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a> 
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a> 
-<a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="TailwindCSS" /></a> 
-<a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a> 
-<a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
-<a href="https://redux.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
-<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-<a href="https://expressjs.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="36" height="36" alt="Express" /></a> 
-<a href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="36" height="36" alt="Firebase" /></a> 
-<a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
-</p>
+### 🎨 **Skills That Make Me Sparkle** ✨
+- 💻 **Frontend:** React, Next.js, HTML5, CSS3, JavaScript, TypeScript
+- 🎨 **Styling Magic:** Tailwind CSS, Styled Components
+- 🚀 **Backend:** Node.js, Express.js
+- 🔥 **Database Firepower:** Firebase, MongoDB
+- 💼 **Version Control:** Git, GitHub
+- 🛠️ **Tools I Love:** Figma, VSCode, Postman
 
 ---
 
-### 🌐 Social Profiles
-<p align="left">
-<a href="https://www.github.com/Up-to-code" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a>  
-<a href="https://www.linkedin.com/in/ahmed-al-refai-6a491a237" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
-</p>
+### 🌟 **Let's Connect and Create Magic:**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed%20Mansour-blue)](https://www.linkedin.com/in/ahmed-al-refai-6a491a237)
+[![GitHub](https://img.shields.io/badge/GitHub-Up--to--code-green)](https://github.com/Up-to-code)
+[![YouTube](https://img.shields.io/badge/YouTube-Ahmed%20Dev-red)](https://youtube.com)
 
 ---
 
-### 📊 GitHub Stats
-<a href="http://www.github.com/Up-to-code"><img src="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&hide=&count_private=true&title_color=f97316&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="Up-to-code's GitHub stats" /></a>
+###  **GitHub Fun Stats**
+![Ahmed's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&theme=tokyonight)
 
-<a href="https://github.com/Up-to-code" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&langs_count=10&title_color=f97316&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20Languages" alt="Top Languages" /></a>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&theme=tokyonight)
+
+---
+
+### 🌱 **Fun Projects I’m Working On:**
+- 🌟 **Fifty:** Time management app with a twist  
+- 🌐 **Portfolio:** Showcasing my work with a stylish flair  
+- 🛒 **E-commerce Platform:** Helping small businesses go digital  
+
+---
+
+### 🎯 **Goals for 2024:**
+- Mastering SaaS 🌐  
+- Diving deep into Microservices  
+- Creating more fun content on my YouTube channel! 🎥
+
+---
+
+💬 _"Life’s too short for boring websites. Let’s make something fun!"_
