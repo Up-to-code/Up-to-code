@@ -58,11 +58,7 @@
 </div>
 
 ###
-
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/Up-to-code/Up-to-code/output/snake.svg" alt="Snake animation" />
-
+ 
 ###
 ###
 <picture>
