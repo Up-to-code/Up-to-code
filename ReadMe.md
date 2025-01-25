@@ -52,5 +52,8 @@ I'm a passionate developer from Egypt who loves building amazing web experiences
 - Creating more fun content on my YouTube channel! 🎥
 
 ---
-
-💬 _"Life’s too short for boring websites. Let’s make something fun!"_
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
+</picture>
