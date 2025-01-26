@@ -49,7 +49,7 @@
   <a href="https://wa.link/4024vn" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=&color=075E54&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="whatsapp logo"  />
   </a>
-  <a href="paypal.me/uptocodejs" target="_blank">
+  <a href="https://www.paypal.com/paypalme/uptocodejs" target="_blank">
     <img src="https://img.shields.io/static/v1?message=PayPal&logo=paypal&label=&color=00457C&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="paypal logo"  />
   </a>
   <a href="https://x.com/uptocodejs" target="_blank">
