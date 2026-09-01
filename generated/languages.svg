@@ -23,21 +23,21 @@
   <rect x="48" y="126" width="864" height="22" rx="11" fill="#21262d" />
   <clipPath id="bar"><rect x="48" y="126" width="864" height="22" rx="11" /></clipPath>
   <g clip-path="url(#bar)">
-    <rect x="48.00" y="126" width="665.43" height="22" fill="#3178c6" />
-    <rect x="713.43" y="126" width="72.13" height="22" fill="#f34b7d" />
-    <rect x="785.56" y="126" width="56.48" height="22" fill="#f1e05a" />
-    <rect x="842.04" y="126" width="55.53" height="22" fill="#663399" />
-    <rect x="897.57" y="126" width="4.42" height="22" fill="#c6538c" />
-    <rect x="901.98" y="126" width="3.54" height="22" fill="#e34c26" />
-    <rect x="905.52" y="126" width="1.77" height="22" fill="hsl(329 68% 56%)" />
+    <rect x="48.00" y="126" width="664.48" height="22" fill="#3178c6" />
+    <rect x="712.48" y="126" width="72.03" height="22" fill="#f34b7d" />
+    <rect x="784.51" y="126" width="57.63" height="22" fill="#f1e05a" />
+    <rect x="842.14" y="126" width="55.45" height="22" fill="#663399" />
+    <rect x="897.59" y="126" width="4.41" height="22" fill="#c6538c" />
+    <rect x="902.00" y="126" width="3.53" height="22" fill="#e34c26" />
+    <rect x="905.53" y="126" width="1.76" height="22" fill="hsl(329 68% 56%)" />
     <rect x="907.29" y="126" width="1.48" height="22" fill="#3572a5" />
-    <rect x="908.77" y="126" width="0.76" height="22" fill="#ff5a03" />
+    <rect x="908.77" y="126" width="0.75" height="22" fill="#ff5a03" />
     <rect x="909.52" y="126" width="0.50" height="22" fill="#a97bff" />
-    <rect x="910.01" y="126" width="0.50" height="22" fill="#89e051" />
-    <rect x="910.36" y="126" width="0.50" height="22" fill="#00add8" />
+    <rect x="910.02" y="126" width="0.50" height="22" fill="#89e051" />
+    <rect x="910.37" y="126" width="0.50" height="22" fill="#00add8" />
     <rect x="910.70" y="126" width="0.50" height="22" fill="#701516" />
     <rect x="911.00" y="126" width="0.50" height="22" fill="#f05138" />
-    <rect x="911.26" y="126" width="0.50" height="22" fill="hsl(314 68% 56%)" />
+    <rect x="911.27" y="126" width="0.50" height="22" fill="hsl(314 68% 56%)" />
     <rect x="911.50" y="126" width="0.50" height="22" fill="#00b4ab" />
     <rect x="911.73" y="126" width="0.50" height="22" fill="#b07219" />
     <rect x="911.83" y="126" width="0.50" height="22" fill="#012456" />
@@ -47,22 +47,22 @@
   <g transform="translate(48 188)">
       <circle cx="6" cy="-5" r="6" fill="#3178c6" />
       <text class="label" x="20" y="0">TypeScript</text>
-      <text class="value" x="266" y="0" text-anchor="end">77.02%</text>
+      <text class="value" x="266" y="0" text-anchor="end">76.91%</text>
     </g>
     <g transform="translate(48 219)">
       <circle cx="6" cy="-5" r="6" fill="#f34b7d" />
       <text class="label" x="20" y="0">C++</text>
-      <text class="value" x="266" y="0" text-anchor="end">8.35%</text>
+      <text class="value" x="266" y="0" text-anchor="end">8.34%</text>
     </g>
     <g transform="translate(48 250)">
       <circle cx="6" cy="-5" r="6" fill="#f1e05a" />
       <text class="label" x="20" y="0">JavaScript</text>
-      <text class="value" x="266" y="0" text-anchor="end">6.54%</text>
+      <text class="value" x="266" y="0" text-anchor="end">6.67%</text>
     </g>
     <g transform="translate(48 281)">
       <circle cx="6" cy="-5" r="6" fill="#663399" />
       <text class="label" x="20" y="0">CSS</text>
-      <text class="value" x="266" y="0" text-anchor="end">6.43%</text>
+      <text class="value" x="266" y="0" text-anchor="end">6.42%</text>
     </g>
     <g transform="translate(48 312)">
       <circle cx="6" cy="-5" r="6" fill="#c6538c" />
