@@ -42,7 +42,7 @@ async function renderTheme(page, theme) {
 async function main() {
   await rm(frameRoot, { recursive: true, force: true });
   const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+  const page = await browser.newPage({ viewport: { width: 1920, height: 720 }, deviceScaleFactor: 1 });
   await page.addInitScript(() => { window.__PROFILE_CAPTURE__ = true; });
 
   try {
@@ -53,7 +53,7 @@ async function main() {
     await rm(frameRoot, { recursive: true, force: true });
   }
 
-  console.log("Rendered 1920×1080 light and dark animated profile cards.");
+  console.log("Rendered 1920×720 light and dark animated profile cards.");
 }
 
 main().catch((error) => {

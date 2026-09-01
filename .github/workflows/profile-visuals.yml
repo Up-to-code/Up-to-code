@@ -23,21 +23,23 @@ concurrency:
 
 jobs:
   profile-assets:
-    name: Language chart and project cards
+    name: Language profile
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - name: Check out profile repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: 20
           cache: npm
 
       - name: Install renderer
         run: |
+          sudo apt-get update
+          sudo apt-get install --yes ffmpeg
           npm ci
           npx playwright install --with-deps chromium
 

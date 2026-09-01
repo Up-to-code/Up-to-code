@@ -21,79 +21,99 @@
       }
 
       body {
-        --background: #f5f5f7;
-        --surface: #ffffff;
+        --canvas: #ffffff;
         --primary: #1d1d1f;
         --secondary: #6e6e73;
-        --hairline: rgba(0, 0, 0, 0.08);
-        display: grid;
-        place-items: center;
-        background: var(--background);
+        --hairline: rgba(0, 0, 0, 0.09);
+        --icon-surface: rgba(0, 0, 0, 0.04);
+        background: var(--canvas);
         color: var(--primary);
       }
 
       body[data-theme="dark"] {
-        --background: #000000;
-        --surface: #0b0b0c;
+        --canvas: #0d1117;
         --primary: #f5f5f7;
-        --secondary: #98989d;
+        --secondary: #8e8e93;
         --hairline: rgba(255, 255, 255, 0.12);
+        --icon-surface: rgba(255, 255, 255, 0.07);
       }
 
       main {
-        width: 1800px;
-        height: 960px;
-        padding: 104px 112px 88px;
-        border: 1px solid var(--hairline);
-        border-radius: 52px;
-        background: var(--surface);
+        width: 1920px;
+        height: 720px;
+        padding: 42px 56px 28px;
         opacity: 0;
-        transform: translateY(16px) scale(0.995);
+        transform: translateY(10px);
       }
 
       header {
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
-        padding-bottom: 68px;
+        padding-bottom: 34px;
       }
 
       h1 {
         margin: 0;
-        max-width: 850px;
-        font-size: 80px;
-        font-weight: 650;
-        letter-spacing: -4.2px;
-        line-height: 0.98;
+        font-size: 64px;
+        font-weight: 640;
+        letter-spacing: -3.6px;
+        line-height: 1;
       }
 
       .summary {
         display: flex;
-        gap: 64px;
-        padding-bottom: 4px;
+        gap: 52px;
       }
 
-      .metric { min-width: 130px; }
+      .metric {
+        display: grid;
+        grid-template-columns: 38px auto;
+        grid-template-rows: auto auto;
+        column-gap: 12px;
+        align-items: center;
+      }
+
+      .metric-icon {
+        display: grid;
+        grid-row: 1 / 3;
+        place-items: center;
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        background: var(--icon-surface);
+        color: var(--secondary);
+      }
+
+      .metric-icon svg {
+        width: 21px;
+        height: 21px;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.8;
+      }
 
       .metric strong {
-        display: block;
-        font-size: 42px;
-        font-weight: 600;
-        letter-spacing: -1.5px;
+        font-size: 30px;
+        font-weight: 620;
+        letter-spacing: -1px;
+        line-height: 1;
       }
 
-      .metric span,
+      .metric-label,
       .updated {
         color: var(--secondary);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 450;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.1px;
       }
 
       .bar-shell {
-        height: 38px;
+        height: 24px;
         overflow: hidden;
-        border-radius: 19px;
+        border-radius: 12px;
         background: var(--hairline);
       }
 
@@ -112,63 +132,71 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-auto-flow: column;
         grid-template-rows: repeat(5, 1fr);
-        column-gap: 84px;
-        row-gap: 0;
+        column-gap: 58px;
         height: 430px;
-        margin: 70px 0 0;
+        margin: 26px 0 0;
         padding: 0;
         list-style: none;
       }
 
       .language {
         display: grid;
-        grid-template-columns: 18px 1fr auto;
+        grid-template-columns: 34px 1fr auto;
         align-items: center;
-        gap: 16px;
+        gap: 10px;
+        min-width: 0;
         border-bottom: 1px solid var(--hairline);
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(7px);
       }
 
       .language:nth-child(5n) { border-bottom: 0; }
 
-      .dot {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
+      .language-icon {
+        display: grid;
+        place-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid color-mix(in srgb, var(--language-color) 55%, transparent);
+        border-radius: 9px;
+        color: var(--language-color);
+        font-size: 10px;
+        font-weight: 720;
+        letter-spacing: -0.4px;
+        line-height: 1;
       }
 
       .name {
         overflow: hidden;
-        font-size: 22px;
-        font-weight: 520;
-        letter-spacing: -0.25px;
+        font-size: 18px;
+        font-weight: 540;
+        letter-spacing: -0.2px;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
 
       .percentage {
         color: var(--secondary);
-        font-size: 20px;
+        font-size: 17px;
         font-variant-numeric: tabular-nums;
-        letter-spacing: -0.2px;
+        letter-spacing: -0.15px;
       }
 
       footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 52px;
+        margin-top: 18px;
       }
 
       .updated { margin: 0; }
 
-      .mark {
-        width: 32px;
-        height: 32px;
-        border: 2px solid var(--secondary);
+      .pulse {
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        opacity: 0.7;
+        background: #30d158;
+        box-shadow: 0 0 0 5px rgba(48, 209, 88, 0.12);
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -180,10 +208,22 @@
   <body>
     <main>
       <header>
-        <h1>Code behind<br />the products.</h1>
+        <h1>Code behind the products.</h1>
         <div class="summary">
-          <div class="metric"><strong id="repository-count"></strong><span>repositories</span></div>
-          <div class="metric"><strong id="language-count"></strong><span>languages</span></div>
+          <div class="metric">
+            <span class="metric-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 1 4 16.5v-11Z"/><path d="M7 3v16M4 16.5A2.5 2.5 0 0 1 6.5 14H19"/></svg>
+            </span>
+            <strong id="repository-count"></strong>
+            <span class="metric-label">public repositories</span>
+          </div>
+          <div class="metric">
+            <span class="metric-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            </span>
+            <strong id="language-count"></strong>
+            <span class="metric-label">languages detected</span>
+          </div>
         </div>
       </header>
 
@@ -192,7 +232,7 @@
 
       <footer>
         <p class="updated" id="updated"></p>
-        <span class="mark" aria-hidden="true"></span>
+        <span class="pulse" aria-hidden="true"></span>
       </footer>
     </main>
 
@@ -204,7 +244,7 @@
 
       document.querySelector("#repository-count").textContent = profile.repositoryCount;
       document.querySelector("#language-count").textContent = profile.languages.length;
-      document.querySelector("#updated").textContent = `Updated automatically · ${profile.updatedLabel}`;
+      document.querySelector("#updated").textContent = `Languages measured across ${profile.languageRepositoryCount} original repositories · ${profile.updatedLabel}`;
 
       for (const language of profile.languages) {
         const segment = document.createElement("span");
@@ -214,7 +254,8 @@
 
         const item = document.createElement("li");
         item.className = "language";
-        item.innerHTML = `<span class="dot" style="background:${language.color}"></span><span class="name">${language.name}</span><span class="percentage">${language.label}</span>`;
+        item.style.setProperty("--language-color", language.color);
+        item.innerHTML = `<span class="language-icon">${language.shortName}</span><span class="name">${language.name}</span><span class="percentage">${language.label}</span>`;
         legend.append(item);
       }
 
@@ -223,24 +264,24 @@
 
       window.renderFrame = (progress, theme = "light") => {
         document.body.dataset.theme = theme;
-        const intro = ease(progress / 0.26);
+        const intro = ease(progress / 0.22);
         main.style.opacity = intro;
-        main.style.transform = `translateY(${16 * (1 - intro)}px) scale(${0.995 + 0.005 * intro})`;
+        main.style.transform = `translateY(${10 * (1 - intro)}px)`;
 
-        const barProgress = ease((progress - 0.08) / 0.48);
+        const barProgress = ease((progress - 0.06) / 0.46);
         bar.style.width = `${barProgress * 100}%`;
 
         [...legend.children].forEach((item, index) => {
-          const itemProgress = ease((progress - 0.22 - index * 0.022) / 0.34);
+          const itemProgress = ease((progress - 0.18 - index * 0.02) / 0.34);
           item.style.opacity = itemProgress;
-          item.style.transform = `translateY(${10 * (1 - itemProgress)}px)`;
+          item.style.transform = `translateY(${7 * (1 - itemProgress)}px)`;
         });
       };
 
       if (!window.__PROFILE_CAPTURE__) {
         const startedAt = performance.now();
         const animate = (now) => {
-          const progress = Math.min(1, (now - startedAt) / 1450);
+          const progress = Math.min(1, (now - startedAt) / 1400);
           window.renderFrame(progress, matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
           if (progress < 1) requestAnimationFrame(animate);
         };

@@ -81,9 +81,17 @@ function formatPercentage(value) {
   return value < 0.01 ? "<0.01%" : `${value.toFixed(2)}%`;
 }
 
+function shortName(language) {
+  const aliases = {
+    TypeScript: "TS", JavaScript: "JS", "C++": "C++", CMake: "CM",
+    PowerShell: "PS", Dockerfile: "DK", Makefile: "MK",
+  };
+  return aliases[language] || language.replace(/[^a-z0-9+#]/gi, "").slice(0, 2).toUpperCase();
+}
+
 async function main() {
   await mkdir(outputDirectory, { recursive: true });
-  const repositories = await getOwnedRepositories();
+  const [account, repositories] = await Promise.all([github(`/users/${owner}`), getOwnedRepositories()]);
   const languageResults = await mapWithConcurrency(repositories, 8, (repository) => github(`/repos/${owner}/${repository.name}/languages`));
   const totals = new Map();
 
@@ -97,11 +105,12 @@ async function main() {
     owner,
     updatedAt,
     updatedLabel: new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${updatedAt}T00:00:00Z`)),
-    repositoryCount: repositories.length,
+    repositoryCount: account.public_repos,
+    languageRepositoryCount: repositories.length,
     languages: [...totals.entries()]
       .map(([name, bytes]) => {
         const percentage = (bytes / totalBytes) * 100;
-        return { name, bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
+        return { name, shortName: shortName(name), bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
       })
       .sort((a, b) => b.bytes - a.bytes),
   };
@@ -111,7 +120,7 @@ async function main() {
 
   await writeFile(path.join(outputDirectory, "languages.json"), `${JSON.stringify(profile, null, 2)}\n`);
   await writeFile(path.join(outputDirectory, "languages.html"), html);
-  console.log(`Generated HTML profile data for ${repositories.length} repositories and ${profile.languages.length} languages.`);
+  console.log(`Generated HTML profile data for ${account.public_repos} public repositories; languages use ${repositories.length} original repositories.`);
 }
 
 main().catch((error) => {
