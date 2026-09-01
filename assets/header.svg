@@ -1,0 +1,63 @@
+<svg width="960" height="280" viewBox="0 0 960 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ahmed Mansour</title>
+  <desc id="desc">Product engineer and open-source builder. I build ideas into products.</desc>
+  <style>
+    .grid-line { animation: drift 12s linear infinite; }
+    .orbit { animation: orbit 16s linear infinite; transform-origin: 812px 140px; }
+    .pulse { animation: pulse 3.2s ease-in-out infinite; transform-origin: 812px 140px; }
+    .cursor { animation: blink 1s steps(2, end) infinite; }
+    @keyframes drift { to { stroke-dashoffset: -48; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes pulse { 50% { opacity: .35; transform: scale(.82); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-color-scheme: light) {
+      .surface { fill: #f8fafc; }
+      .border { stroke: #d8dee9; }
+      .primary { fill: #172033; }
+      .muted { fill: #5c667a; }
+      .grid { stroke: #0ea5e9; opacity: .10; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020" />
+      <stop offset=".52" stop-color="#111A31" />
+      <stop offset="1" stop-color="#0B1224" />
+    </linearGradient>
+    <linearGradient id="accent" x1="92" y1="56" x2="864" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8" />
+      <stop offset=".5" stop-color="#8B5CF6" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(812 140) rotate(90) scale(138)">
+      <stop stop-color="#8B5CF6" stop-opacity=".34" />
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="pattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path class="grid grid-line" d="M24 0H0V24" stroke="#38BDF8" stroke-opacity=".13" stroke-dasharray="3 2" />
+    </pattern>
+    <clipPath id="clip"><rect width="960" height="280" rx="22" /></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect class="surface" width="960" height="280" rx="22" fill="url(#bg)" />
+    <rect width="960" height="280" fill="url(#pattern)" />
+    <circle cx="812" cy="140" r="138" fill="url(#glow)" />
+    <circle class="pulse" cx="812" cy="140" r="56" stroke="url(#accent)" stroke-width="2" opacity=".8" />
+    <g class="orbit">
+      <ellipse cx="812" cy="140" rx="106" ry="46" stroke="url(#accent)" stroke-width="1.5" stroke-dasharray="8 8" />
+      <circle cx="918" cy="140" r="6" fill="#38BDF8" />
+      <circle cx="706" cy="140" r="4" fill="#F97316" />
+    </g>
+    <path d="M778 155L810 91L842 155L825 155L810 126L795 155H778Z" fill="url(#accent)" />
+    <path d="M795 164H825" stroke="#38BDF8" stroke-width="5" stroke-linecap="round" />
+    <rect x="64" y="53" width="112" height="28" rx="14" fill="#38BDF8" fill-opacity=".12" stroke="#38BDF8" stroke-opacity=".45" />
+    <circle cx="80" cy="67" r="4" fill="#22C55E" />
+    <text x="91" y="72" fill="#7DD3FC" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" font-weight="600" letter-spacing="1.2">AVAILABLE</text>
+    <text class="primary" x="64" y="132" fill="#F8FAFC" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.8">AHMED MANSOUR</text>
+    <text x="65" y="168" fill="url(#accent)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="700" letter-spacing="2.1">PRODUCT ENGINEER • OPEN-SOURCE BUILDER</text>
+    <text class="muted" x="65" y="212" fill="#A7B0C4" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="18">I build ideas into products.</text>
+    <rect class="cursor" x="315" y="195" width="3" height="22" rx="1.5" fill="#38BDF8" />
+    <rect x="0" y="274" width="960" height="6" fill="url(#accent)" />
+  </g>
+  <rect class="border" x=".75" y=".75" width="958.5" height="278.5" rx="21.25" stroke="#26334D" stroke-width="1.5" />
+</svg>

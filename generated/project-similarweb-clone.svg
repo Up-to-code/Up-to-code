@@ -1,0 +1,38 @@
+<svg width="460" height="168" viewBox="0 0 460 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">similarweb-clone</title>
+  <desc id="desc">A web analytics dashboard inspired by SimilarWeb, built with Next.js, React, and the SimilarWeb Traffic API. This application allows users to analyze website traffic data, including visitor statistics, engagement metrics, traffic sources, and more.</desc>
+  <style>
+    .surface { fill: #0d1117; }
+    .border { stroke: #30363d; }
+    .title { fill: #f0f6fc; font: 700 17px ui-sans-serif, system-ui, sans-serif; }
+    .muted { fill: #8b949e; font: 13px ui-sans-serif, system-ui, sans-serif; }
+    .meta { fill: #c9d1d9; font: 600 12px ui-sans-serif, system-ui, sans-serif; }
+    .shine { animation: shine 4.5s ease-in-out infinite; }
+    @keyframes shine { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+    @media (prefers-color-scheme: light) {
+      .surface { fill: #ffffff; }
+      .border { stroke: #d0d7de; }
+      .title { fill: #1f2328; }
+      .muted { fill: #57606a; }
+      .meta { fill: #24292f; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="460" y2="0">
+      <stop stop-color="#3178c6" />
+      <stop offset="1" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect class="surface" x="1" y="1" width="458" height="166" rx="14" />
+  <rect class="border" x="1" y="1" width="458" height="166" rx="14" fill="none" />
+  <rect class="shine" x="1" y="1" width="458" height="4" rx="2" fill="url(#accent)" />
+  <path d="M31 34.5a5.5 5.5 0 0 1 5.5-5.5h10a5.5 5.5 0 0 1 5.5 5.5v13a5.5 5.5 0 0 1-5.5 5.5h-10a5.5 5.5 0 0 1-5.5-5.5v-13Z" fill="none" stroke="#3178c6" stroke-width="1.5" />
+  <path d="M36 29v24" stroke="#3178c6" stroke-width="1.5" />
+  <text class="title" x="64" y="47">similarweb-clone</text>
+  <text class="muted" x="30" y="82">A web analytics dashboard inspired by SimilarWeb,</text>
+  <text class="muted" x="30" y="102">built with Next.js, React, and the SimilarWeb Traffic…</text>
+  <circle cx="34" cy="142" r="5" fill="#3178c6" />
+  <text class="meta" x="47" y="146">TypeScript</text>
+  <text class="meta" x="410" y="146" text-anchor="end">★ 5</text>
+  <path d="M425 139h9m0 0-4-4m4 4-4 4" stroke="#3178c6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

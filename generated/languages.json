@@ -1,0 +1,87 @@
+{
+  "owner": "Up-to-code",
+  "updatedAt": "2026-09-01",
+  "repositoryCount": 80,
+  "languages": [
+    {
+      "name": "TypeScript",
+      "bytes": 5663641
+    },
+    {
+      "name": "C++",
+      "bytes": 613909
+    },
+    {
+      "name": "JavaScript",
+      "bytes": 480708
+    },
+    {
+      "name": "CSS",
+      "bytes": 472599
+    },
+    {
+      "name": "SCSS",
+      "bytes": 37588
+    },
+    {
+      "name": "HTML",
+      "bytes": 30101
+    },
+    {
+      "name": "CMake",
+      "bytes": 15035
+    },
+    {
+      "name": "Python",
+      "bytes": 12594
+    },
+    {
+      "name": "Astro",
+      "bytes": 6429
+    },
+    {
+      "name": "Kotlin",
+      "bytes": 4198
+    },
+    {
+      "name": "Shell",
+      "bytes": 2971
+    },
+    {
+      "name": "Go",
+      "bytes": 2870
+    },
+    {
+      "name": "Ruby",
+      "bytes": 2522
+    },
+    {
+      "name": "Swift",
+      "bytes": 2275
+    },
+    {
+      "name": "Makefile",
+      "bytes": 1973
+    },
+    {
+      "name": "Dart",
+      "bytes": 1962
+    },
+    {
+      "name": "Java",
+      "bytes": 900
+    },
+    {
+      "name": "PowerShell",
+      "bytes": 852
+    },
+    {
+      "name": "Dockerfile",
+      "bytes": 471
+    },
+    {
+      "name": "C",
+      "bytes": 102
+    }
+  ]
+}
