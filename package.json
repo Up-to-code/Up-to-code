@@ -1,0 +1,13 @@
+{
+  "name": "up-to-code-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:data": "node scripts/generate-profile-assets.mjs",
+    "generate:images": "node scripts/render-language-card.mjs",
+    "generate": "npm run generate:data && npm run generate:images"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

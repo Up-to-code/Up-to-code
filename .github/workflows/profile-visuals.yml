@@ -8,8 +8,10 @@ on:
     branches: [main]
     paths:
       - ReadMe.md
-      - assets/**
-      - scripts/generate-profile-assets.mjs
+      - languages/**
+      - package.json
+      - package-lock.json
+      - scripts/**
       - .github/workflows/profile-visuals.yml
 
 permissions:
@@ -32,9 +34,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
+
+      - name: Install renderer
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
 
       - name: Generate profile assets
-        run: node scripts/generate-profile-assets.mjs
+        run: npm run generate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

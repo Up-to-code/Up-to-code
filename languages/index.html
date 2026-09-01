@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code behind the products</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        font-synthesis: none;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      body {
+        --background: #f5f5f7;
+        --surface: #ffffff;
+        --primary: #1d1d1f;
+        --secondary: #6e6e73;
+        --hairline: rgba(0, 0, 0, 0.08);
+        display: grid;
+        place-items: center;
+        background: var(--background);
+        color: var(--primary);
+      }
+
+      body[data-theme="dark"] {
+        --background: #000000;
+        --surface: #0b0b0c;
+        --primary: #f5f5f7;
+        --secondary: #98989d;
+        --hairline: rgba(255, 255, 255, 0.12);
+      }
+
+      main {
+        width: 1800px;
+        height: 960px;
+        padding: 104px 112px 88px;
+        border: 1px solid var(--hairline);
+        border-radius: 52px;
+        background: var(--surface);
+        opacity: 0;
+        transform: translateY(16px) scale(0.995);
+      }
+
+      header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-bottom: 68px;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 850px;
+        font-size: 80px;
+        font-weight: 650;
+        letter-spacing: -4.2px;
+        line-height: 0.98;
+      }
+
+      .summary {
+        display: flex;
+        gap: 64px;
+        padding-bottom: 4px;
+      }
+
+      .metric { min-width: 130px; }
+
+      .metric strong {
+        display: block;
+        font-size: 42px;
+        font-weight: 600;
+        letter-spacing: -1.5px;
+      }
+
+      .metric span,
+      .updated {
+        color: var(--secondary);
+        font-size: 20px;
+        font-weight: 450;
+        letter-spacing: -0.2px;
+      }
+
+      .bar-shell {
+        height: 38px;
+        overflow: hidden;
+        border-radius: 19px;
+        background: var(--hairline);
+      }
+
+      .bar {
+        display: flex;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+        border-radius: inherit;
+      }
+
+      .bar span { flex: none; height: 100%; }
+
+      .legend {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-auto-flow: column;
+        grid-template-rows: repeat(5, 1fr);
+        column-gap: 84px;
+        row-gap: 0;
+        height: 430px;
+        margin: 70px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .language {
+        display: grid;
+        grid-template-columns: 18px 1fr auto;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 1px solid var(--hairline);
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      .language:nth-child(5n) { border-bottom: 0; }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+
+      .name {
+        overflow: hidden;
+        font-size: 22px;
+        font-weight: 520;
+        letter-spacing: -0.25px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .percentage {
+        color: var(--secondary);
+        font-size: 20px;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: -0.2px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 52px;
+      }
+
+      .updated { margin: 0; }
+
+      .mark {
+        width: 32px;
+        height: 32px;
+        border: 2px solid var(--secondary);
+        border-radius: 50%;
+        opacity: 0.7;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        main, .language { opacity: 1; transform: none; }
+        .bar { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Code behind<br />the products.</h1>
+        <div class="summary">
+          <div class="metric"><strong id="repository-count"></strong><span>repositories</span></div>
+          <div class="metric"><strong id="language-count"></strong><span>languages</span></div>
+        </div>
+      </header>
+
+      <div class="bar-shell"><div class="bar" id="bar"></div></div>
+      <ol class="legend" id="legend"></ol>
+
+      <footer>
+        <p class="updated" id="updated"></p>
+        <span class="mark" aria-hidden="true"></span>
+      </footer>
+    </main>
+
+    <script>
+      const profile = __PROFILE_DATA__;
+      const main = document.querySelector("main");
+      const bar = document.querySelector("#bar");
+      const legend = document.querySelector("#legend");
+
+      document.querySelector("#repository-count").textContent = profile.repositoryCount;
+      document.querySelector("#language-count").textContent = profile.languages.length;
+      document.querySelector("#updated").textContent = `Updated automatically · ${profile.updatedLabel}`;
+
+      for (const language of profile.languages) {
+        const segment = document.createElement("span");
+        segment.style.width = `${language.percentage}%`;
+        segment.style.background = language.color;
+        bar.append(segment);
+
+        const item = document.createElement("li");
+        item.className = "language";
+        item.innerHTML = `<span class="dot" style="background:${language.color}"></span><span class="name">${language.name}</span><span class="percentage">${language.label}</span>`;
+        legend.append(item);
+      }
+
+      const clamp = (value) => Math.max(0, Math.min(1, value));
+      const ease = (value) => 1 - Math.pow(1 - clamp(value), 3);
+
+      window.renderFrame = (progress, theme = "light") => {
+        document.body.dataset.theme = theme;
+        const intro = ease(progress / 0.26);
+        main.style.opacity = intro;
+        main.style.transform = `translateY(${16 * (1 - intro)}px) scale(${0.995 + 0.005 * intro})`;
+
+        const barProgress = ease((progress - 0.08) / 0.48);
+        bar.style.width = `${barProgress * 100}%`;
+
+        [...legend.children].forEach((item, index) => {
+          const itemProgress = ease((progress - 0.22 - index * 0.022) / 0.34);
+          item.style.opacity = itemProgress;
+          item.style.transform = `translateY(${10 * (1 - itemProgress)}px)`;
+        });
+      };
+
+      if (!window.__PROFILE_CAPTURE__) {
+        const startedAt = performance.now();
+        const animate = (now) => {
+          const progress = Math.min(1, (now - startedAt) / 1450);
+          window.renderFrame(progress, matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+          if (progress < 1) requestAnimationFrame(animate);
+        };
+        requestAnimationFrame(animate);
+      }
+    </script>
+  </body>
+</html>
