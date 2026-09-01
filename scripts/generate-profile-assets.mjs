@@ -4,7 +4,6 @@ import path from "node:path";
 const owner = process.env.GITHUB_REPOSITORY_OWNER || "Up-to-code";
 const token = process.env.GITHUB_TOKEN;
 const outputDirectory = path.resolve("generated");
-const featuredRepositories = ["Kyna", "roshn-reit", "qentrah-whatsapp", "similarweb-clone"];
 
 const knownColors = {
   Astro: "#ff5a03",
@@ -149,71 +148,6 @@ function languageChart(languages, repositoryCount, updatedAt) {
 </svg>`;
 }
 
-function wrapText(value, maxLength = 54, maxLines = 2) {
-  const words = (value || "A project by Ahmed Mansour.").trim().split(/\s+/);
-  const lines = [];
-  let current = "";
-  for (const word of words) {
-    const candidate = current ? `${current} ${word}` : word;
-    if (candidate.length <= maxLength) current = candidate;
-    else {
-      if (current) lines.push(current);
-      current = word;
-      if (lines.length === maxLines) break;
-    }
-  }
-  if (lines.length < maxLines && current) lines.push(current);
-  const sourceWasCut = lines.join(" ").length < (value || "").trim().length;
-  if (sourceWasCut && lines.length) lines[lines.length - 1] = `${lines.at(-1).replace(/[.,;:]?$/, "")}…`;
-  return lines.slice(0, maxLines);
-}
-
-function projectCard(repository, languageBytes) {
-  const primaryLanguage = Object.entries(languageBytes).sort((a, b) => b[1] - a[1])[0]?.[0] || repository.language || "Code";
-  const descriptionLines = wrapText(repository.description);
-  const textLines = descriptionLines.map((line, index) => `<text class="muted" x="30" y="${82 + index * 20}">${escapeXml(line)}</text>`).join("\n  ");
-  const repositoryName = repository.name === "roshn-reit" ? "ROSHN REIT" : repository.name;
-  const accent = colorFor(primaryLanguage);
-
-  return `<svg width="460" height="168" viewBox="0 0 460 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">${escapeXml(repositoryName)}</title>
-  <desc id="desc">${escapeXml(repository.description || `The ${repositoryName} repository`)}</desc>
-  <style>
-    .surface { fill: #0d1117; }
-    .border { stroke: #30363d; }
-    .title { fill: #f0f6fc; font: 700 17px ui-sans-serif, system-ui, sans-serif; }
-    .muted { fill: #8b949e; font: 13px ui-sans-serif, system-ui, sans-serif; }
-    .meta { fill: #c9d1d9; font: 600 12px ui-sans-serif, system-ui, sans-serif; }
-    .shine { animation: shine 4.5s ease-in-out infinite; }
-    @keyframes shine { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
-    @media (prefers-color-scheme: light) {
-      .surface { fill: #ffffff; }
-      .border { stroke: #d0d7de; }
-      .title { fill: #1f2328; }
-      .muted { fill: #57606a; }
-      .meta { fill: #24292f; }
-    }
-  </style>
-  <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="460" y2="0">
-      <stop stop-color="${accent}" />
-      <stop offset="1" stop-color="#8b5cf6" />
-    </linearGradient>
-  </defs>
-  <rect class="surface" x="1" y="1" width="458" height="166" rx="14" />
-  <rect class="border" x="1" y="1" width="458" height="166" rx="14" fill="none" />
-  <rect class="shine" x="1" y="1" width="458" height="4" rx="2" fill="url(#accent)" />
-  <path d="M31 34.5a5.5 5.5 0 0 1 5.5-5.5h10a5.5 5.5 0 0 1 5.5 5.5v13a5.5 5.5 0 0 1-5.5 5.5h-10a5.5 5.5 0 0 1-5.5-5.5v-13Z" fill="none" stroke="${accent}" stroke-width="1.5" />
-  <path d="M36 29v24" stroke="${accent}" stroke-width="1.5" />
-  <text class="title" x="64" y="47">${escapeXml(repositoryName)}</text>
-  ${textLines}
-  <circle cx="34" cy="142" r="5" fill="${accent}" />
-  <text class="meta" x="47" y="146">${escapeXml(primaryLanguage)}</text>
-  <text class="meta" x="410" y="146" text-anchor="end">★ ${repository.stargazers_count}</text>
-  <path d="M425 139h9m0 0-4-4m4 4-4 4" stroke="${accent}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-</svg>`;
-}
-
 async function main() {
   await mkdir(outputDirectory, { recursive: true });
   const repositories = await getOwnedRepositories();
@@ -229,12 +163,6 @@ async function main() {
 
   await writeFile(path.join(outputDirectory, "languages.svg"), languageChart(languages, repositories.length, updatedAt));
   await writeFile(path.join(outputDirectory, "languages.json"), `${JSON.stringify({ owner, updatedAt, repositoryCount: repositories.length, languages }, null, 2)}\n`);
-
-  for (const repositoryName of featuredRepositories) {
-    const repository = await github(`/repos/${owner}/${repositoryName}`);
-    const languageBytes = await github(`/repos/${owner}/${repositoryName}/languages`);
-    await writeFile(path.join(outputDirectory, `project-${repositoryName.toLowerCase()}.svg`), projectCard(repository, languageBytes));
-  }
 
   console.log(`Generated profile assets for ${repositories.length} repositories and ${languages.length} languages.`);
 }

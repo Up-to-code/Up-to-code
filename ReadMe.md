@@ -11,35 +11,6 @@
   <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,express,postgres,mongodb,firebase,tailwind,python,go,cpp,git&perline=14" alt="Core technologies: TypeScript, JavaScript, React, Next.js, Node.js, Express, PostgreSQL, MongoDB, Firebase, Tailwind CSS, Python, Go, C++, and Git" />
 </p>
 
-## Selected work
-
-<table>
-  <tr>
-    <td width="50%">
-      <a href="https://github.com/Up-to-code/Kyna">
-        <img src="./generated/project-kyna.svg" width="100%" alt="Kyna repository card" />
-      </a>
-    </td>
-    <td width="50%">
-      <a href="https://github.com/Up-to-code/roshn-reit">
-        <img src="./generated/project-roshn-reit.svg" width="100%" alt="ROSHN REIT repository card" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <a href="https://github.com/Up-to-code/qentrah-whatsapp">
-        <img src="./generated/project-qentrah-whatsapp.svg" width="100%" alt="qentrah-whatsapp repository card" />
-      </a>
-    </td>
-    <td width="50%">
-      <a href="https://github.com/Up-to-code/similarweb-clone">
-        <img src="./generated/project-similarweb-clone.svg" width="100%" alt="Similarweb clone repository card" />
-      </a>
-    </td>
-  </tr>
-</table>
-
 ## Languages across my work
 
 This chart is rebuilt automatically from every public, original repository I own. Percentages are calculated from the language bytes reported by GitHub.
