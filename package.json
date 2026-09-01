@@ -8,6 +8,7 @@
     "generate": "npm run generate:data && npm run generate:images"
   },
   "devDependencies": {
+    "devicon": "2.17.0",
     "playwright": "1.62.1"
   }
 }

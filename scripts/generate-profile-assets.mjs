@@ -1,9 +1,32 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const owner = process.env.GITHUB_REPOSITORY_OWNER || "Up-to-code";
 const token = process.env.GITHUB_TOKEN;
 const outputDirectory = path.resolve("generated");
+const iconDirectory = path.join(outputDirectory, "icons");
+
+const languageIcons = {
+  Astro: "astro/astro-original.svg",
+  C: "c/c-original.svg",
+  "C++": "cplusplus/cplusplus-original.svg",
+  CMake: "cmake/cmake-original.svg",
+  CSS: "css3/css3-original.svg",
+  Dart: "dart/dart-original.svg",
+  Dockerfile: "docker/docker-original.svg",
+  Go: "go/go-original.svg",
+  HTML: "html5/html5-original.svg",
+  Java: "java/java-original.svg",
+  JavaScript: "javascript/javascript-original.svg",
+  Kotlin: "kotlin/kotlin-original.svg",
+  PowerShell: "powershell/powershell-original.svg",
+  Python: "python/python-original.svg",
+  Ruby: "ruby/ruby-original.svg",
+  SCSS: "sass/sass-original.svg",
+  Shell: "bash/bash-original.svg",
+  Swift: "swift/swift-original.svg",
+  TypeScript: "typescript/typescript-original.svg",
+};
 
 const knownColors = {
   Astro: "#ff5a03",
@@ -81,12 +104,22 @@ function formatPercentage(value) {
   return value < 0.01 ? "<0.01%" : `${value.toFixed(2)}%`;
 }
 
-function shortName(language) {
-  const aliases = {
-    TypeScript: "TS", JavaScript: "JS", "C++": "C++", CMake: "CM",
-    PowerShell: "PS", Dockerfile: "DK", Makefile: "MK",
-  };
-  return aliases[language] || language.replace(/[^a-z0-9+#]/gi, "").slice(0, 2).toUpperCase();
+function iconName(language) {
+  if (language === "C++") return "cpp.svg";
+  return `${language.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}.svg`;
+}
+
+async function copyLanguageIcons(languages) {
+  await rm(iconDirectory, { recursive: true, force: true });
+  await mkdir(iconDirectory, { recursive: true });
+  await Promise.all(languages.map(async ({ name }) => {
+    const source = name === "Makefile"
+      ? path.resolve("languages", "icons", "makefile.svg")
+      : languageIcons[name]
+        ? path.resolve("node_modules", "devicon", "icons", languageIcons[name])
+        : path.resolve("languages", "icons", "code.svg");
+    await copyFile(source, path.join(iconDirectory, iconName(name)));
+  }));
 }
 
 async function main() {
@@ -110,10 +143,12 @@ async function main() {
     languages: [...totals.entries()]
       .map(([name, bytes]) => {
         const percentage = (bytes / totalBytes) * 100;
-        return { name, shortName: shortName(name), bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
+        return { name, icon: `./icons/${iconName(name)}`, bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
       })
       .sort((a, b) => b.bytes - a.bytes),
   };
+
+  await copyLanguageIcons(profile.languages);
 
   const template = await readFile(path.resolve("languages", "index.html"), "utf8");
   const html = template.replace("__PROFILE_DATA__", JSON.stringify(profile).replaceAll("<", "\\u003c"));

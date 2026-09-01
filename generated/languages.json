@@ -7,7 +7,7 @@
   "languages": [
     {
       "name": "TypeScript",
-      "shortName": "TS",
+      "icon": "./icons/typescript.svg",
       "bytes": 5663641,
       "percentage": 76.75116289312226,
       "label": "76.75%",
@@ -15,7 +15,7 @@
     },
     {
       "name": "C++",
-      "shortName": "C++",
+      "icon": "./icons/cpp.svg",
       "bytes": 613909,
       "percentage": 8.319423787728386,
       "label": "8.32%",
@@ -23,7 +23,7 @@
     },
     {
       "name": "JavaScript",
-      "shortName": "JS",
+      "icon": "./icons/javascript.svg",
       "bytes": 487268,
       "percentage": 6.603240855238863,
       "label": "6.60%",
@@ -31,7 +31,7 @@
     },
     {
       "name": "CSS",
-      "shortName": "CS",
+      "icon": "./icons/css.svg",
       "bytes": 472599,
       "percentage": 6.404453042155511,
       "label": "6.40%",
@@ -39,7 +39,7 @@
     },
     {
       "name": "HTML",
-      "shortName": "HT",
+      "icon": "./icons/html.svg",
       "bytes": 49066,
       "percentage": 0.6649207742005427,
       "label": "0.66%",
@@ -47,7 +47,7 @@
     },
     {
       "name": "SCSS",
-      "shortName": "SC",
+      "icon": "./icons/scss.svg",
       "bytes": 37588,
       "percentage": 0.5093759846054294,
       "label": "0.51%",
@@ -55,7 +55,7 @@
     },
     {
       "name": "CMake",
-      "shortName": "CM",
+      "icon": "./icons/cmake.svg",
       "bytes": 15035,
       "percentage": 0.20374768353045203,
       "label": "0.20%",
@@ -63,7 +63,7 @@
     },
     {
       "name": "Python",
-      "shortName": "PY",
+      "icon": "./icons/python.svg",
       "bytes": 12594,
       "percentage": 0.1706683289911881,
       "label": "0.17%",
@@ -71,7 +71,7 @@
     },
     {
       "name": "Astro",
-      "shortName": "AS",
+      "icon": "./icons/astro.svg",
       "bytes": 6429,
       "percentage": 0.08712297023061365,
       "label": "0.09%",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Kotlin",
-      "shortName": "KO",
+      "icon": "./icons/kotlin.svg",
       "bytes": 4198,
       "percentage": 0.0568894429970627,
       "label": "0.06%",
@@ -87,7 +87,7 @@
     },
     {
       "name": "Shell",
-      "shortName": "SH",
+      "icon": "./icons/shell.svg",
       "bytes": 2971,
       "percentage": 0.04026168059653961,
       "label": "0.04%",
@@ -95,7 +95,7 @@
     },
     {
       "name": "Go",
-      "shortName": "GO",
+      "icon": "./icons/go.svg",
       "bytes": 2870,
       "percentage": 0.03889297317807764,
       "label": "0.04%",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Ruby",
-      "shortName": "RU",
+      "icon": "./icons/ruby.svg",
       "bytes": 2522,
       "percentage": 0.034177030785753244,
       "label": "0.03%",
@@ -111,7 +111,7 @@
     },
     {
       "name": "Swift",
-      "shortName": "SW",
+      "icon": "./icons/swift.svg",
       "bytes": 2275,
       "percentage": 0.03082979581189081,
       "label": "0.03%",
@@ -119,7 +119,7 @@
     },
     {
       "name": "Makefile",
-      "shortName": "MK",
+      "icon": "./icons/makefile.svg",
       "bytes": 1973,
       "percentage": 0.02673722511510355,
       "label": "0.03%",
@@ -127,7 +127,7 @@
     },
     {
       "name": "Dart",
-      "shortName": "DA",
+      "icon": "./icons/dart.svg",
       "bytes": 1962,
       "percentage": 0.026588157970518587,
       "label": "0.03%",
@@ -135,7 +135,7 @@
     },
     {
       "name": "Java",
-      "shortName": "JA",
+      "icon": "./icons/java.svg",
       "bytes": 900,
       "percentage": 0.012196402738769992,
       "label": "0.01%",
@@ -143,7 +143,7 @@
     },
     {
       "name": "PowerShell",
-      "shortName": "PS",
+      "icon": "./icons/powershell.svg",
       "bytes": 852,
       "percentage": 0.011545927926035593,
       "label": "0.01%",
@@ -151,7 +151,7 @@
     },
     {
       "name": "Dockerfile",
-      "shortName": "DK",
+      "icon": "./icons/dockerfile.svg",
       "bytes": 471,
       "percentage": 0.006382784099956296,
       "label": "<0.01%",
@@ -159,7 +159,7 @@
     },
     {
       "name": "C",
-      "shortName": "C",
+      "icon": "./icons/c.svg",
       "bytes": 102,
       "percentage": 0.0013822589770605992,
       "label": "<0.01%",

@@ -1,6 +1,9 @@
-<h1 align="center">Ahmed Mansour</h1>
+<h1 align="center">Hey, I'm Ahmed.</h1>
 
-<p align="center">Full-stack developer building useful products for the web.</p>
+<p align="center">
+  I'm a full-stack developer who loves turning ideas into real products.<br />
+  I build thoughtful interfaces, dependable systems, and useful tools for the web.
+</p>
 
 <a href="./generated/languages.html">
   <picture>
