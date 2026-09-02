@@ -10,7 +10,7 @@
       .title { fill: #f0f6fc; }
     }
   </style>
-  <text class="title" x="0" y="36">Hey, I am Ahmed
+  <text class="title" x="0" y="36" opacity="0">Hey, I am Ahmed
     <animate attributeName="opacity" from="0" to="1" dur="0.8s" fill="freeze" />
   </text>
 </svg>
