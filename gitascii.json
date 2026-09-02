@@ -1,0 +1,98 @@
+{
+  "username": "Up-to-code",
+  "widgets": [
+    {
+      "instanceId": "widget_1788389330219",
+      "widgetId": "gitfut-card",
+      "name": "Gitfut-card Widget",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 300,
+        "height": 420
+      },
+      "config": {
+        "transparentBackground": true,
+        "hideBorder": true,
+        "hideDecorations": true,
+        "showTitle": false,
+        "enableHolo": true,
+        "accentColor": "#00ffff"
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 1
+    },
+    {
+      "instanceId": "widget_1788389436941",
+      "widgetId": "godprofile-trophies",
+      "name": "Godprofile-trophies Widget",
+      "position": {
+        "x": 0,
+        "y": 436
+      },
+      "size": {
+        "width": 800,
+        "height": 280
+      },
+      "config": {
+        "accentColor": "#b6a891"
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 3
+    },
+    {
+      "instanceId": "widget_1788389508775",
+      "widgetId": "surveillance-telemetry",
+      "name": "Surveillance-telemetry Widget",
+      "position": {
+        "x": 10,
+        "y": 704
+      },
+      "size": {
+        "width": 780,
+        "height": 420
+      },
+      "config": {
+        "accentColor": "#55ffff",
+        "customTitle": "Terminal Telemetry"
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 4
+    },
+    {
+      "instanceId": "widget_1788389686838",
+      "widgetId": "bio",
+      "name": "Bio Widget",
+      "position": {
+        "x": 296,
+        "y": 24
+      },
+      "size": {
+        "width": 494,
+        "height": 364
+      },
+      "config": {},
+      "locked": false,
+      "visible": true,
+      "zIndex": 4
+    }
+  ],
+  "globalStyles": {
+    "backgroundColor": "#060606",
+    "textColor": "#e5e5e5",
+    "accentColor": "#c5ff4a",
+    "borderColor": "#252525",
+    "fontFamily": "'Inter Tight', sans-serif",
+    "borderRadius": 0,
+    "padding": 24,
+    "themeMode": "dark",
+    "templateStyle": "blank"
+  },
+  "templateId": "blank",
+  "profileSlug": "default"
+}
