@@ -3,6 +3,20 @@ import path from "node:path";
 
 const owner = process.env.GITHUB_REPOSITORY_OWNER || "Up-to-code";
 const token = process.env.GITHUB_TOKEN;
+
+/** Keep these off language totals even if a token can see them. */
+const hiddenRepositories = new Set([
+  "lamerre",
+  "alpha-app",
+  "alpha-marketing",
+  "qentrah-platform",
+  "qentrah-edittor",
+  "qentrah-studio",
+  "qentrah-brand-assets",
+  "qentrah-chat",
+  "QentrahAi",
+  "qentrah-whatsapp",
+]);
 const outputDirectory = path.resolve("generated");
 const iconDirectory = path.join(outputDirectory, "icons");
 
@@ -75,7 +89,12 @@ async function getOwnedRepositories() {
   const repositories = [];
   for (let page = 1; ; page += 1) {
     const batch = await github(`/users/${owner}/repos?type=owner&sort=updated&per_page=100&page=${page}`);
-    repositories.push(...batch.filter((repository) => !repository.fork && !repository.archived));
+    repositories.push(...batch.filter((repository) => (
+      !repository.fork
+      && !repository.archived
+      && !hiddenRepositories.has(repository.name)
+      && !/qentrah/i.test(repository.name)
+    )));
     if (batch.length < 100) return repositories;
   }
 }
