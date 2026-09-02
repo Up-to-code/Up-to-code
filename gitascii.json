@@ -18,68 +18,14 @@
         "hideBorder": true,
         "hideDecorations": true,
         "showTitle": false,
-        "enableHolo": true,
-        "accentColor": "#00ffff"
+        "enableHolo": false,
+        "accentColor": "#00ffff",
+        "animationType": "fade-in",
+        "animationPreviewKey": 1
       },
       "locked": false,
       "visible": true,
       "zIndex": 1
-    },
-    {
-      "instanceId": "widget_1788389436941",
-      "widgetId": "godprofile-trophies",
-      "name": "Godprofile-trophies Widget",
-      "position": {
-        "x": 0,
-        "y": 436
-      },
-      "size": {
-        "width": 800,
-        "height": 280
-      },
-      "config": {
-        "accentColor": "#b6a891"
-      },
-      "locked": false,
-      "visible": true,
-      "zIndex": 3
-    },
-    {
-      "instanceId": "widget_1788389508775",
-      "widgetId": "surveillance-telemetry",
-      "name": "Surveillance-telemetry Widget",
-      "position": {
-        "x": 10,
-        "y": 704
-      },
-      "size": {
-        "width": 780,
-        "height": 420
-      },
-      "config": {
-        "accentColor": "#55ffff",
-        "customTitle": "Terminal Telemetry"
-      },
-      "locked": false,
-      "visible": true,
-      "zIndex": 4
-    },
-    {
-      "instanceId": "widget_1788389686838",
-      "widgetId": "bio",
-      "name": "Bio Widget",
-      "position": {
-        "x": 296,
-        "y": 24
-      },
-      "size": {
-        "width": 494,
-        "height": 364
-      },
-      "config": {},
-      "locked": false,
-      "visible": true,
-      "zIndex": 4
     }
   ],
   "globalStyles": {
