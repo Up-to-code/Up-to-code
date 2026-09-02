@@ -1,18 +1,22 @@
 # Hey, I am Ahmed 👋
 
-I'm a software engineer. I build products, developer tools, and agent systems — TypeScript when I'm shipping, C++ when I'm building a language or an editor.
+I'm a software engineer. I build products, developer tools, and agent systems.
 
-<img src="https://gitfut.com/Up-to-code.png" width="220" alt="Ahmed Mansour GitHub card" />
+<img align="left" width="220" src="https://gitfut.com/Up-to-code.png" alt="Ahmed Mansour GitHub card" />
 
 **Agentic engineer** · full-stack
 
-- 🤖 Agents and tools — design the loop, give it APIs, ship it
-- 🧩 Products — Next.js apps that made it out of the repo
-- 📦 Libraries — typed wrappers other software can call
+TypeScript and Next.js when I ship a product. C++ when I build a language or an editor — [Kyna](https://github.com/Up-to-code/Kyna) and [Sater](https://sater.cc).
 
-I care about Arabic-first software: RTL layouts, mixed Arabic/English UX, tools that do not treat English as the only default.
+- 🤖 **Agents** — design the loop, give it APIs, ship it
+- 🧩 **Products** — analytics, marketplaces, CRMs, real estate
+- 📦 **Libraries** — WhatsApp, Instagram, OpenAI, typed
+
+Arabic-first by default: RTL, mixed Arabic/English, English is not assumed.
 
 [Public work](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna](https://up-to-code.github.io/kyna-docs/)
+
+<br clear="both" />
 
 <p>
 <img alt="Public repositories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=public_repos&amp;label=public%20repos&amp;style=flat&amp;logo=github" />
