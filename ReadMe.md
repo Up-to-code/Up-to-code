@@ -1,8 +1,10 @@
 <h1 align="center">Ahmed Mansour</h1>
 
+<p align="center"><strong>Agentic engineer</strong> · full-stack · systems</p>
+
 <p align="center">
-  Full-stack developer. I turn ideas into products people can use.<br />
-  I ship interfaces, APIs, and the tooling underneath — from Next.js apps to a programming language.
+  I build software that acts — agents, runtimes, and the products around them.<br />
+  TypeScript and Next.js when I'm shipping. C++ when I'm building a language or an editor.
 </p>
 
 <p align="center">
@@ -10,39 +12,49 @@
   ·
   <a href="https://sater.cc">Sater</a>
   ·
-  <a href="https://up-to-code.github.io/kyna-docs/">Kyna docs</a>
+  <a href="https://up-to-code.github.io/kyna-docs/">Kyna</a>
+</p>
+
+## Who I am
+
+I am a full-stack software engineer who works like an agent engineer: design the loop, give it tools, ship the product.
+
+That looks like three layers in my public work:
+
+- **Agents and tools** — editor shells, CLI runtimes, and APIs that other software can call. [Sater](https://github.com/Up-to-code/sater) is an Arabic-first environment on Code - OSS, with an agents window and a bilingual workbench. [Kyna](https://github.com/Up-to-code/Kyna) is a typed language with a compiler, bytecode VM, and `ky` CLI.
+- **Products** — Next.js apps that made it out of the repo: analytics, marketplaces, CRMs, real estate, forms.
+- **Libraries** — typed wrappers so WhatsApp, Instagram, and OpenAI are something I can orchestrate, not a pile of fetch calls.
+
+I build a lot in Arabic and mixed Arabic/English contexts: RTL layouts, Arabic-first UX, and tools that do not treat English as the only default. Under the public account is more of the same — agent platforms, multi-tenant builders, and product work I keep private on purpose.
+
+Most days I am in **TypeScript**, **React**, and **Next.js**. When the problem is a language, a compiler, or an editor, I drop to **C++**.
+
+## Live
+
+These pull from GitHub on their own. I do not commit new numbers.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark&rank_icon=github" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=default&rank_icon=github" />
+    <img alt="Live GitHub stats for Ahmed Mansour" src="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=default&rank_icon=github" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=github_dark&hide=html,css,scss,twig" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=default&hide=html,css,scss,twig" />
+    <img alt="Live top languages from public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=default&hide=html,css,scss,twig" />
+  </picture>
 </p>
 
 <p align="center">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-  <img alt="React" src="https://img.shields.io/badge/React-087EA4?style=flat-square&logo=react&logoColor=white" />
-  <img alt="C++" src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-3C873A?style=flat-square&logo=nodedotjs&logoColor=white" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-dark&hide_border=true&area=true" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-light&hide_border=true&area=true" />
+    <img alt="Live contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-light&hide_border=true&area=true" width="100%" />
+  </picture>
 </p>
 
-## What I build
-
-Most of my public work is **TypeScript** on **Next.js** and **React**: analytics dashboards, marketplaces, and typed API wrappers. When the problem needs a language or an editor, I drop to **C++**.
-
-| | | |
-| :--- | :--- | :--- |
-| **Languages** | TypeScript, JavaScript, C++ | plus CSS, Python, HTML, Go, Dart |
-| **Product stack** | Next.js, React, Tailwind | Vite, GSAP, Docusaurus |
-| **Systems** | C++23, CMake, Code - OSS | compilers, CLIs, editor shells |
-| **APIs** | WhatsApp Cloud, Instagram Graph | OpenAI, SimilarWeb, TikTok |
-
-<a href="./generated/languages.html">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./generated/languages-dark.png" />
-    <source media="(prefers-color-scheme: light)" srcset="./generated/languages-light.png" />
-    <img width="100%" alt="Language usage across Ahmed Mansour's public repositories" src="./generated/languages-light.png" />
-  </picture>
-</a>
-
 ## Strongest public projects
-
-These are the repos I want people to open first. Live demos are linked where they exist.
 
 ### Developer tools
 
@@ -50,41 +62,41 @@ These are the repos I want people to open first. Live demos are linked where the
 Arabic-first developer environment on Code - OSS. RTL workbench, bilingual first-run, and a code surface that stays LTR so Arabic and English can live in the same editor.
 
 **[Kyna](https://github.com/Up-to-code/Kyna)** · C++ · [Language docs](https://up-to-code.github.io/kyna-docs/)
-A typed programming language with its own compiler pipeline, bytecode VM, `ky` CLI, and VS Code extension. Readable scripts, HTTP backends, and inspectable compiler stages.
+A typed programming language with a compiler pipeline, bytecode VM, `ky` CLI, and VS Code extension.
 
 ### Products
 
 **[SimilarWeb clone](https://github.com/Up-to-code/similarweb-clone)** · TypeScript · [Live](https://similar-web-clone.vercel.app/)
-Traffic analytics dashboard: visits, engagement, sources, geography, and keywords. Next.js + React.
+Traffic analytics: visits, engagement, sources, geography, keywords.
 
 **[TikTok analytics](https://github.com/Up-to-code/tiktok-analytics)** · TypeScript · [Live](https://tiktok-analytics.netlify.app/)
-Profile insights for TikTok accounts — followers, engagement, and account stats.
+Profile insights — followers, engagement, account stats.
 
 **[FreelanceHub](https://github.com/Up-to-code/freelancer-website)** · TypeScript · [Live](https://freelancehub7.netlify.app/)
-Freelance marketplace that connects clients with independent talent. Next.js 14 and Tailwind.
+Marketplace connecting clients with independent talent. Next.js 14.
 
 **[Form builder](https://github.com/Up-to-code/form-builder)** · TypeScript · [Live](https://form-builder-one-taupe.vercel.app)
-Drag-and-drop forms, validation, unique share URLs, and exportable submissions.
+Drag-and-drop forms, validation, share URLs, exportable submissions.
 
 **[Customer management](https://github.com/Up-to-code/Customer_Management_System)** · TypeScript · [Live](https://customer-management-system-alpha.vercel.app)
 Arabic CRM for sales, payments, and customer history.
 
 **[ROSHN REIT](https://github.com/Up-to-code/roshn-reit)** · JavaScript
-Real-estate marketing site with React, Vite, GSAP, and a full RTL Arabic layout.
+Real-estate site with React, Vite, GSAP, and a full RTL Arabic layout.
 
 **[Real estate](https://github.com/Up-to-code/real-estate)** · TypeScript · [Live](https://real-estate-up.netlify.app/)
-Property listings and search with a focused Next.js UI.
+Property listings and search.
 
 ### Libraries
 
 **[WhatsApp Cloud API](https://github.com/Up-to-code/WhatsApp-Meta-Business-API-Handler)** · TypeScript
-Typed wrapper for messages, media, buttons, and templates.
+Messages, media, buttons, templates — typed.
 
 **[Instagram Graph API](https://github.com/Up-to-code/Instagram-Meta-Business-API-Handler)** · TypeScript
-Posts, stories, comments, DMs, and analytics with full type safety.
+Posts, stories, comments, DMs, analytics.
 
 **[OpenAI wrapper](https://github.com/Up-to-code/AI-Model-Wrapper-for-OpenAI)** · TypeScript
-Conversation state, streaming, and optional debug logging around the OpenAI API.
+Conversation state, streaming, debug logging.
 
 ## Also worth a look
 
@@ -93,6 +105,8 @@ Conversation state, streaming, and optional debug logging around the OpenAI API.
 The rest of the public account is older apps, experiments, and learning repos. Start with the list above.
 
 ## Contribution trail
+
+Updated automatically.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Up-to-code/Up-to-code/output/github-snake-dark.svg" />
