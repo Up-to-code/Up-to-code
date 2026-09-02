@@ -26,6 +26,26 @@
       "locked": false,
       "visible": true,
       "zIndex": 1
+    },
+    {
+      "instanceId": "widget_1788389971236",
+      "widgetId": "surveillance-telemetry",
+      "name": "Surveillance-telemetry Widget",
+      "position": {
+        "x": 0,
+        "y": 436
+      },
+      "size": {
+        "width": 780,
+        "height": 420
+      },
+      "config": {
+        "accentColor": "#55ffff",
+        "customTitle": "Terminal Telemetry"
+      },
+      "locked": false,
+      "visible": true,
+      "zIndex": 2
     }
   ],
   "globalStyles": {
