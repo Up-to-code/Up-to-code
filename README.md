@@ -1,4 +1,4 @@
-<img src="./assets/hey.svg" alt="Hey, I am Ahmed" />
+# Hey, I am Ahmed 👋
 
 I'm a software engineer. I build products, developer tools, and agent systems — TypeScript when I'm shipping, C++ when I'm building a language or an editor.
 
@@ -14,11 +14,9 @@ I care about Arabic-first software: RTL layouts, mixed Arabic/English UX, tools 
 
 [Public work](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna](https://up-to-code.github.io/kyna-docs/)
 
+<p>
 <img alt="Public repositories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=public_repos&amp;label=public%20repos&amp;style=flat&amp;logo=github" />
 <img alt="Followers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=followers&amp;label=followers&amp;style=flat&amp;logo=github" />
-
-<br />
-
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" />
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&amp;logo=javascript&amp;logoColor=black" />
 <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat&amp;logo=nextdotjs&amp;logoColor=white" />
@@ -30,6 +28,7 @@ I care about Arabic-first software: RTL layouts, mixed Arabic/English UX, tools 
 <img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26?style=flat&amp;logo=html5&amp;logoColor=white" />
 <img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6?style=flat&amp;logo=css&amp;logoColor=white" />
 <img alt="GSAP" src="https://img.shields.io/badge/GSAP-88CE02?style=flat&amp;logo=greensock&amp;logoColor=black" />
+</p>
 
 Most days I work in **TypeScript**, **JavaScript**, **React**, and **Next.js**. When the work is a compiler or an editor, I write **C++** — that is [Kyna](https://github.com/Up-to-code/Kyna) and [Sater](https://github.com/Up-to-code/sater). Some work stays private. The public repos below are the ones to open.
 
