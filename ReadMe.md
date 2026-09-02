@@ -31,27 +31,20 @@ Most days I am in **TypeScript**, **React**, and **Next.js**. When the problem i
 
 ## Live
 
-These pull from GitHub on their own. I do not commit new numbers.
+These badges read GitHub’s API when the profile loads. No image is committed, and I do not refresh the numbers by hand.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=github_dark&rank_icon=github" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=default&rank_icon=github" />
-    <img alt="Live GitHub stats for Ahmed Mansour" src="https://github-readme-stats.vercel.app/api?username=Up-to-code&show_icons=true&include_all_commits=true&hide_border=true&theme=default&rank_icon=github" />
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=github_dark&hide=html,css,scss,twig" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=default&hide=html,css,scss,twig" />
-    <img alt="Live top languages from public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Up-to-code&layout=compact&langs_count=8&hide_border=true&theme=default&hide=html,css,scss,twig" />
-  </picture>
+  <img alt="Public repositories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=public_repos&amp;label=public%20repos&amp;style=for-the-badge&amp;color=238636&amp;logo=github&amp;logoColor=white" />
+  <img alt="Followers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=followers&amp;label=followers&amp;style=for-the-badge&amp;color=1f6feb&amp;logo=github&amp;logoColor=white" />
+  <img alt="Following" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=following&amp;label=following&amp;style=for-the-badge&amp;color=6e7681" />
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-dark&hide_border=true&area=true" />
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-light&hide_border=true&area=true" />
-    <img alt="Live contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Up-to-code&theme=github-light&hide_border=true&area=true" width="100%" />
-  </picture>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&amp;logo=typescript&amp;logoColor=white" />
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&amp;logo=nextdotjs&amp;logoColor=white" />
+  <img alt="React" src="https://img.shields.io/badge/React-087EA4?style=for-the-badge&amp;logo=react&amp;logoColor=white" />
+  <img alt="C++" src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&amp;logo=cplusplus&amp;logoColor=white" />
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-3C873A?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" />
 </p>
 
 ## Strongest public projects
