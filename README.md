@@ -34,7 +34,7 @@ Arabic-first by default: RTL, mixed Arabic/English, English is not assumed.
 <img alt="GSAP" src="https://img.shields.io/badge/GSAP-88CE02?style=flat&amp;logo=greensock&amp;logoColor=black" />
 </p>
 
-Most days I work in **TypeScript**, **JavaScript**, **React**, and **Next.js**. When the work is a compiler or an editor, I write **C++** — that is [Kyna](https://github.com/Up-to-code/Kyna) and [Sater](https://github.com/Up-to-code/sater). Some work stays private. The public repos below are the ones to open.
+Some work stays private. The public repos below are the ones to open.
 
 ### 📦 Install Kyna
 
