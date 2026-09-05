@@ -34,7 +34,30 @@ Arabic-first by default: RTL, mixed Arabic/English, English is not assumed.
 <img alt="GSAP" src="https://img.shields.io/badge/GSAP-88CE02?style=flat&amp;logo=greensock&amp;logoColor=black" />
 </p>
 
-Some work stays private. The public repos below are the ones to open.
+Some work stays private. It's in the VIP lounge with the NDAs. 🤫
+The public stuff? Right here. Come for the code, stay because `npm install` is still running.
+
+<table>
+<tr>
+<td align="center" width="140">
+<br />
+<strong>💿</strong><br />
+<strong>UP TO CODE</strong><br />
+<sub>The side-project sessions</sub><br /><br />
+</td>
+<td width="540">
+<sub>▶ NOW PLAYING · DEVELOPER MIXTAPE</sub><br />
+<strong>Just One More Commit</strong><br />
+Ahmed Mansour · feat. the bug that only happens in production<br /><br />
+<code>━━━━━━━●──────────── 03:14 / ship:it</code><br /><br />
+<a href="#-developer-tools">⏮ Tools</a> &nbsp; · &nbsp;
+<a href="#-products">▶ Products</a> &nbsp; · &nbsp;
+<a href="#-npm-packages">⏭ npm packages</a><br />
+<sub>Repeat: on. Scope creep: also on. These controls browse projects; no audio, just commits.</sub>
+</td>
+</tr>
+</table>
+
 
 ### 📦 Install Kyna
 
