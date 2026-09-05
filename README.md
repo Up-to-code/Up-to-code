@@ -1,20 +1,22 @@
-# Hey, I am Ahmed 👋
+# Hey, I'm Ahmed 👋
 
-I'm a software engineer. I build products, developer tools, and agent systems.
+I love building cool stuff. And the next best part is getting to say, “hey, look at this thing I made” — and letting you poke around inside it.
 
 <img align="left" width="220" src="https://gitfut.com/Up-to-code.png" alt="Ahmed Mansour GitHub card" />
 
-**Agentic engineer** · full-stack
+**Big “wait, can I build that?” energy.**
 
-TypeScript and Next.js when I ship a product. C++ when I build a language or an editor — [Kyna](https://github.com/Up-to-code/Kyna) and [Sater](https://sater.cc).
+Sometimes that's a web app. Sometimes it's a CLI. Sometimes I get curious about programming languages and suddenly there's [Kyna](https://github.com/Up-to-code/Kyna), a compiler, and a bytecode VM to look after. Very reasonable hobby escalation.
 
-- 🤖 **Agents** — design the loop, give it APIs, ship it
-- 🧩 **Products** — analytics, marketplaces, CRMs, real estate
-- 📦 **Libraries** — WhatsApp, Instagram, OpenAI, typed
+Then there's [Sater](https://sater.cc): taking Code - OSS, the open-source base of VS Code, and working on an editor that feels at home in Arabic. Apparently using an editor wasn't enough. I had to get inside that too.
 
-Arabic-first by default: RTL, mixed Arabic/English, English is not assumed.
+I like following an idea far enough to understand how it works, changing things, breaking things, and sharing what comes out of it. Languages, editors, agents, libraries, little experiments — this GitHub is where those rabbit holes end up.
 
-[Public work](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna](https://up-to-code.github.io/kyna-docs/)
+Arabic belongs in the experience from the start. RTL, English, Arabic, both in the same file: that's the everyday stuff I want my tools to feel good at.
+
+Have a look around. Try something. Tell me what broke, or show me what you built with it. That's the fun part. 💛
+
+[Explore the repos](https://github.com/Up-to-code?tab=repositories&type=source) · [Meet Sater](https://sater.cc) · [Try Kyna](https://up-to-code.github.io/kyna-docs/)
 
 <br clear="both" />
 
@@ -61,7 +63,7 @@ Ahmed Mansour · feat. the bug that only happens in production<br /><br />
 
 ### 📦 Install Kyna
 
-The `ky` binary — compiler, REPL, and project runner. Install with the [npm installer](https://www.npmjs.com/package/@kyna-language/cli):
+Want to try the language rabbit hole for yourself? `ky` is Kyna's compiler, REPL, and project runner. Grab it with the [npm installer](https://www.npmjs.com/package/@kyna-language/cli):
 
 ```sh
 npm install -g @kyna-language/cli
@@ -69,7 +71,7 @@ ky --version
 ky doctor
 ```
 
-Or use the shell installer:
+More of a shell person? Same destination:
 
 ```sh
 curl -fsSL https://github.com/Up-to-code/Kyna/releases/latest/download/install.sh | sh
@@ -77,57 +79,65 @@ ky --version
 ky doctor
 ```
 
-Docs: [up-to-code.github.io/kyna-docs](https://up-to-code.github.io/kyna-docs/) · source: [Up-to-code/Kyna](https://github.com/Up-to-code/Kyna)
+Start exploring: [Kyna docs](https://up-to-code.github.io/kyna-docs/) · peek under the hood: [Up-to-code/Kyna](https://github.com/Up-to-code/Kyna)
 
 ---
 
 ### 🛠 Developer tools
 
+The projects where “I wonder how that works” got a little out of hand.
+
 **[Sater](https://github.com/Up-to-code/sater)** · TypeScript · [sater.cc](https://sater.cc)  
-Arabic-first editor on Code - OSS. RTL workbench, bilingual first-run, LTR code surface so Arabic and English can live in the same file.
+My Arabic-first editor adventure, built on Code - OSS. An RTL workbench, a bilingual welcome, and an LTR code surface — because reading Arabic shouldn't mean wrestling with the tool you're writing in.
 
 **[Kyna](https://github.com/Up-to-code/Kyna)** · C++ · [docs](https://up-to-code.github.io/kyna-docs/)  
-A typed language with a compiler, bytecode VM, `ky` CLI, and VS Code extension.
+A programming language I'm building in C++, with a compiler, bytecode VM, `ky` CLI, and VS Code extension. Still growing, with plenty left to build. Come for the syntax; stay for the compiler rabbit hole.
 
 ### 🚀 Products
 
+Things you can open in a browser and play with. Some are clones, some are experiments, and some started with a very specific “this would be useful.”
+
 **[SimilarWeb clone](https://github.com/Up-to-code/similarweb-clone)** · [live](https://similar-web-clone.vercel.app/)  
-Traffic analytics: visits, sources, geography, keywords.
+My take on rebuilding a traffic analytics dashboard: visits, sources, geography, and keywords. The kind of project that makes you open six more tabs.
 
 **[TikTok analytics](https://github.com/Up-to-code/tiktok-analytics)** · [live](https://tiktok-analytics.netlify.app/)  
-Followers, engagement, account stats.
+Followers, engagement, and account stats in one dashboard. A different kind of scrolling session.
 
 **[FreelanceHub](https://github.com/Up-to-code/freelancer-website)** · [live](https://freelancehub7.netlify.app/)  
-Marketplace for clients and freelancers. Next.js 14.
+A marketplace experiment with Next.js: clients, freelancers, and the search for the right match.
 
 **[Form builder](https://github.com/Up-to-code/form-builder)** · [live](https://form-builder-one-taupe.vercel.app)  
-Drag-and-drop forms, validation, share URLs, export submissions.
+Drag fields around, add validation, share a form, and export the answers. Building the thing that builds the thing is always a good time.
 
 **[Customer management](https://github.com/Up-to-code/Customer_Management_System)** · [live](https://customer-management-system-alpha.vercel.app)  
-Arabic CRM for sales, payments, and history.
+An Arabic CRM that gives sales, payments, and customer history a place to live. A little order for a lot of moving parts.
 
 **[ROSHN REIT](https://github.com/Up-to-code/roshn-reit)**  
-Real-estate site. React, Vite, GSAP, full RTL layout.
+A real-estate site with React, Vite, GSAP, and a full RTL layout. A place to play with motion as well as the details.
 
 **[Real estate](https://github.com/Up-to-code/real-estate)** · [live](https://real-estate-up.netlify.app/)  
-Property listings and search.
+Property listings and search — another exploration of making a lot of information feel easy to browse.
 
 ### 📦 npm packages
 
-- **[@qentrah/auth-sdk](https://www.npmjs.com/package/@qentrah/auth-sdk)** — Qentrah partner integration SDK for OAuth, webhooks, resource calls, and consoles.
-- **[@qentrah/whatsapp](https://www.npmjs.com/package/@qentrah/whatsapp)** — Framework-agnostic TypeScript utilities for WhatsApp Cloud API messages, media, templates, webhooks, and campaigns.
-- **[@qentrah/dui](https://www.npmjs.com/package/@qentrah/dui)** — Open-source React component library distributed through the shadcn CLI.
-- **[@qentrah/skills](https://www.npmjs.com/package/@qentrah/skills)** — Install canonical Qentrah agent skills from their public GitHub repositories.
-- **[@kyna-language/cli](https://www.npmjs.com/package/@kyna-language/cli)** — Verified native installer and command shims for Kyna, providing the `ky` and `kyna` commands.
+Little pieces of my projects that can come live in yours. That's one of my favorite things about sharing code.
+
+- **[@qentrah/auth-sdk](https://www.npmjs.com/package/@qentrah/auth-sdk)** — The Qentrah integration bits in one SDK: OAuth, webhooks, resource calls, and consoles. Less wiring to start from scratch.
+- **[@qentrah/whatsapp](https://www.npmjs.com/package/@qentrah/whatsapp)** — TypeScript helpers for WhatsApp messages, media, templates, webhooks, and campaigns. Bring your own framework.
+- **[@qentrah/dui](https://www.npmjs.com/package/@qentrah/dui)** — React components to build with, shared through the shadcn CLI. Take a look, grab a piece, make it yours.
+- **[@qentrah/skills](https://www.npmjs.com/package/@qentrah/skills)** — An installer for Qentrah agent skills from their public GitHub repos. A small shortcut into the agent rabbit hole.
+- **[@kyna-language/cli](https://www.npmjs.com/package/@kyna-language/cli)** — Kyna's verified native installer on npm. It puts `ky` and `kyna` in your terminal — the language has its own little delivery service.
 
 ### 📚 Libraries
 
-**[WhatsApp Cloud API](https://github.com/Up-to-code/WhatsApp-Meta-Business-API-Handler)** — messages, media, buttons, templates.  
-**[Instagram Graph API](https://github.com/Up-to-code/Instagram-Meta-Business-API-Handler)** — posts, stories, comments, DMs, analytics.  
-**[OpenAI wrapper](https://github.com/Up-to-code/AI-Model-Wrapper-for-OpenAI)** — conversation state, streaming, debug logging.
+More reusable bits from exploring APIs. If I've already wrestled with the plumbing, maybe you don't have to.
+
+**[WhatsApp Cloud API](https://github.com/Up-to-code/WhatsApp-Meta-Business-API-Handler)** — helpers for messages, media, buttons, and templates. The building blocks of a conversation.  
+**[Instagram Graph API](https://github.com/Up-to-code/Instagram-Meta-Business-API-Handler)** — posts, stories, comments, DMs, and analytics, gathered into something you can build on.  
+**[OpenAI wrapper](https://github.com/Up-to-code/AI-Model-Wrapper-for-OpenAI)** — conversation state, streaming, and debug logging for when you want to see what your AI app is actually doing.
 
 <details>
-<summary>More public work</summary>
+<summary>Bonus tracks: more rabbit holes</summary>
 
 [Streaming platform](https://github.com/Up-to-code/streaming-platform) · [Google search clone](https://github.com/Up-to-code/google-search-clone) · [Real-estate CRM](https://github.com/Up-to-code/Real-Estate-CRM-System) · [Kyna docs](https://github.com/Up-to-code/kyna-docs)
 
@@ -136,6 +146,8 @@ Property listings and search.
 ---
 
 ### 🐍 Contribution trail
+
+And here's a snake eating the evidence of “just one more commit.”
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Up-to-code/Up-to-code/output/github-snake-dark.svg" />
