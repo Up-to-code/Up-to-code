@@ -38,7 +38,15 @@ Some work stays private. The public repos below are the ones to open.
 
 ### 📦 Install Kyna
 
-The `ky` binary — compiler, REPL, and project runner:
+The `ky` binary — compiler, REPL, and project runner. Install with the [npm installer](https://www.npmjs.com/package/@kyna-language/cli):
+
+```sh
+npm install -g @kyna-language/cli
+ky --version
+ky doctor
+```
+
+Or use the shell installer:
 
 ```sh
 curl -fsSL https://github.com/Up-to-code/Kyna/releases/latest/download/install.sh | sh
@@ -80,6 +88,14 @@ Real-estate site. React, Vite, GSAP, full RTL layout.
 
 **[Real estate](https://github.com/Up-to-code/real-estate)** · [live](https://real-estate-up.netlify.app/)  
 Property listings and search.
+
+### 📦 npm packages
+
+- **[@qentrah/auth-sdk](https://www.npmjs.com/package/@qentrah/auth-sdk)** — Qentrah partner integration SDK for OAuth, webhooks, resource calls, and consoles.
+- **[@qentrah/whatsapp](https://www.npmjs.com/package/@qentrah/whatsapp)** — Framework-agnostic TypeScript utilities for WhatsApp Cloud API messages, media, templates, webhooks, and campaigns.
+- **[@qentrah/dui](https://www.npmjs.com/package/@qentrah/dui)** — Open-source React component library distributed through the shadcn CLI.
+- **[@qentrah/skills](https://www.npmjs.com/package/@qentrah/skills)** — Install canonical Qentrah agent skills from their public GitHub repositories.
+- **[@kyna-language/cli](https://www.npmjs.com/package/@kyna-language/cli)** — Verified native installer and command shims for Kyna, providing the `ky` and `kyna` commands.
 
 ### 📚 Libraries
 
