@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="12" viewBox="0 0 640 12">
+<style>
+.dot { animation: drift 4s ease-in-out 1; }
+@keyframes drift { from { transform:translateX(-300px) } to { transform:translateX(0) } }
+@media (prefers-reduced-motion: reduce) { .dot { animation:none } }
+</style>
+<path d="M0 6H640" stroke="#8b949e" stroke-opacity=".25"/>
+<circle class="dot" cx="320" cy="6" r="3" fill="#58a6ff"/>
+</svg>
