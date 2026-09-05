@@ -1,10 +1,36 @@
-# Hey, I'm Ahmed <img src="assets/hello-wave.svg" width="42" height="42" alt="Waving hello" />
+# Hey, I'm Ahmed 👋
 
-I like writing code and sharing what I make.
+<img align="left" width="220" src="https://gitfut.com/Up-to-code.png" alt="Ahmed Mansour GitHub card" />
 
-I'm building [Kyna](https://github.com/Up-to-code/Kyna), a programming language, and [Sater](https://github.com/Up-to-code/sater), an Arabic-first editor based on Code - OSS. I also make CLIs, libraries, web apps, and clones of things I want to understand better.
+I freelance, and I love building things of my own too.
 
-There's a mix of finished projects and things I'm still figuring out here. If you try one, I'd love to hear what you think.
+I'm working on [Kyna](https://github.com/Up-to-code/Kyna), a programming language, and [Sater](https://github.com/Up-to-code/sater), an Arabic-first editor based on Code - OSS.
+
+I also make CLIs, libraries, web apps, and clones of things I want to understand better. I like sharing the code and seeing what other people do with it.
+
+Some projects here are finished. Others are still taking shape. If you try one, let me know what you think.
+
+[My repos](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna docs](https://up-to-code.github.io/kyna-docs/)
+
+<br clear="both" />
+
+<p>
+<img alt="Public repositories" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=public_repos&amp;label=public%20repos&amp;style=flat&amp;logo=github" />
+<img alt="Followers" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUp-to-code&amp;query=followers&amp;label=followers&amp;style=flat&amp;logo=github" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&amp;logo=typescript&amp;logoColor=white" />
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&amp;logo=javascript&amp;logoColor=black" />
+<img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?style=flat&amp;logo=nextdotjs&amp;logoColor=white" />
+<img alt="React" src="https://img.shields.io/badge/React-087EA4?style=flat&amp;logo=react&amp;logoColor=white" />
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-3C873A?style=flat&amp;logo=nodedotjs&amp;logoColor=white" />
+<img alt="C++" src="https://img.shields.io/badge/C++-00599C?style=flat&amp;logo=cplusplus&amp;logoColor=white" />
+<img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat&amp;logo=go&amp;logoColor=white" />
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white" />
+<img alt="HTML" src="https://img.shields.io/badge/HTML-E34F26?style=flat&amp;logo=html5&amp;logoColor=white" />
+<img alt="CSS" src="https://img.shields.io/badge/CSS-1572B6?style=flat&amp;logo=css&amp;logoColor=white" />
+<img alt="GSAP" src="https://img.shields.io/badge/GSAP-88CE02?style=flat&amp;logo=greensock&amp;logoColor=black" />
+</p>
+
+Some work stays private. Here's what I can share.
 
 <table>
 <tr>
@@ -55,8 +81,6 @@ ky doctor
 </details>
 
 [Read the docs](https://up-to-code.github.io/kyna-docs/) · [Source](https://github.com/Up-to-code/Kyna)
-
-<img src="assets/section-motion.svg" width="640" height="12" alt="" />
 
 ### 🚀 Products
 
