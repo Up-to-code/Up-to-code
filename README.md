@@ -12,6 +12,12 @@ Some projects here are finished. Others are still taking shape. If you try one, 
 
 [My repos](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna docs](https://up-to-code.github.io/kyna-docs/)
 
+### 📄 CV
+
+[View my CV](https://github.com/Up-to-code/ahmed-mansour-cv/blob/main/Ahmed_Mansour_CV.pdf) · [Download PDF](https://github.com/Up-to-code/ahmed-mansour-cv/raw/main/Ahmed_Mansour_CV.pdf) · [CV repository](https://github.com/Up-to-code/ahmed-mansour-cv)
+
+My CV highlights selected work across SaaS products, AI agents, developer tooling, mobile applications, and Arabic-first software.
+
 <br clear="both" />
 
 <p>
