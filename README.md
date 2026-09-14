@@ -1,16 +1,25 @@
-# Hey, I'm Ahmed 👋
+# Ahmed Mansour
+
+### Full-Stack & AI Engineer · SaaS · Mobile Apps · Developer Tools
 
 <img align="left" width="220" src="https://gitfut.com/Up-to-code.png" alt="Ahmed Mansour GitHub card" />
 
-I freelance, and I love building things of my own too.
+I build software across the stack: web applications, mobile apps, AI integrations, and the tools developers use to create them. My work combines TypeScript, React, Next.js, and Node.js with React Native/Expo for mobile and C++ for language tooling.
 
-I'm working on [Kyna](https://github.com/Up-to-code/Kyna), a programming language, and [Sater](https://github.com/Up-to-code/sater), an Arabic-first editor based on Code - OSS.
+**For clients, I build:**
 
-I also make CLIs, libraries, web apps, and clones of things I want to understand better. I like sharing the code and seeing what other people do with it.
+- **Web products and business tools:** SaaS applications, dashboards, CRMs, marketplaces, and visual form builders.
+- **AI and API integrations:** conversational workflows, streaming responses, WhatsApp integrations, webhooks, and data extraction.
+- **Mobile applications:** cross-platform experiences built with React Native and Expo.
+- **Arabic-first interfaces:** bilingual products with deliberate RTL layouts and Arabic-language support.
 
-Some projects here are finished. Others are still taking shape. If you try one, let me know what you think.
+My independent projects go deeper into developer infrastructure. I'm building **[Kyna](https://github.com/Up-to-code/Kyna)**, a programming language with a compiler, bytecode VM, CLI, and VS Code extension, and **[Sater](https://github.com/Up-to-code/sater)**, an Arabic-first development environment based on Code - OSS. Both are actively in development.
 
-[My repos](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna docs](https://up-to-code.github.io/kyna-docs/)
+I also publish reusable libraries and npm packages for API integrations, React interfaces, and developer workflows. The repositories below include product builds, open-source tools, and learning projects, with their scope and status documented individually.
+
+**Available for freelance development and collaboration.**
+
+[Portfolio](https://ahmed-macos-portfolio.vercel.app/) · [Repositories](https://github.com/Up-to-code?tab=repositories&type=source) · [Sater](https://sater.cc) · [Kyna docs](https://up-to-code.github.io/kyna-docs/)
 
 ### 📄 CV
 
