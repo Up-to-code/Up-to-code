@@ -19,6 +19,7 @@ const hiddenRepositories = new Set([
 ]);
 const outputDirectory = path.resolve("generated");
 const iconDirectory = path.join(outputDirectory, "icons");
+const readmePath = path.resolve("README.md");
 
 const languageIcons = {
   Astro: "astro/astro-original.svg",
@@ -123,6 +124,36 @@ function formatPercentage(value) {
   return value < 0.01 ? "<0.01%" : `${value.toFixed(2)}%`;
 }
 
+function languageProfileMarkdown(profile) {
+  const rows = profile.languages.slice(0, 6).map((language) => (
+    `| ${language.name} | ${language.label} |`
+  ));
+  return [
+    `Measured from GitHub language bytes across **${profile.languageRepositoryCount} original repositories**. Updated **${profile.updatedLabel}**.`,
+    "",
+    "<picture>",
+    '  <source media="(prefers-color-scheme: dark)" srcset="./generated/languages-dark.png" />',
+    '  <source media="(prefers-color-scheme: light)" srcset="./generated/languages-light.png" />',
+    '  <img src="./generated/languages-light.png" alt="Ahmed Mansour language profile" />',
+    "</picture>",
+    "",
+    "| Language | Share |",
+    "| --- | ---: |",
+    ...rows,
+    "",
+    '<sub>Full data: <a href="./generated/languages.json">generated/languages.json</a>.</sub>',
+  ].join("\n");
+}
+
+async function updateReadme(profile) {
+  const readme = await readFile(readmePath, "utf8");
+  const updated = readme.replace(
+    /<!-- LANGUAGE_PROFILE_START -->[\s\S]*?<!-- LANGUAGE_PROFILE_END -->/,
+    `<!-- LANGUAGE_PROFILE_START -->\n${languageProfileMarkdown(profile)}\n<!-- LANGUAGE_PROFILE_END -->`,
+  );
+  await writeFile(readmePath, updated);
+}
+
 function iconName(language) {
   if (language === "C++") return "cpp.svg";
   return `${language.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}.svg`;
@@ -174,6 +205,7 @@ async function main() {
 
   await writeFile(path.join(outputDirectory, "languages.json"), `${JSON.stringify(profile, null, 2)}\n`);
   await writeFile(path.join(outputDirectory, "languages.html"), html);
+  await updateReadme(profile);
   console.log(`Generated HTML profile data for ${account.public_repos} public repositories; languages use ${repositories.length} original repositories.`);
 }
 
