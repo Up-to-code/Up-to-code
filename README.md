@@ -5,10 +5,6 @@
 **Agentic engineer building products, developer tools, and intelligent systems.**
 
 <p align="center">
-  <img width="180" src="https://gitfut.com/Up-to-code.png" alt="Ahmed Mansour GitHub card" />
-</p>
-
-<p align="center">
   <a href="https://ahmed.qentrah.com/">CV and profile</a> |
   <a href="https://github.com/Up-to-code">GitHub</a> |
   <a href="https://x.com/uptocodejs">X</a> |
