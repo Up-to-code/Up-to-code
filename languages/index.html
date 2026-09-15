@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Code behind the products</title>
+    <title>Ahmed Mansour language footprint</title>
     <style>
       :root {
         color-scheme: light dark;
@@ -201,21 +201,21 @@
   <body>
     <main>
       <header>
-        <h1>Code behind the products.</h1>
+        <h1>Language footprint.</h1>
         <div class="summary">
           <div class="metric">
             <span class="metric-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v16H6.5A2.5 2.5 0 0 1 4 16.5v-11Z"/><path d="M7 3v16M4 16.5A2.5 2.5 0 0 1 6.5 14H19"/></svg>
             </span>
             <strong id="repository-count"></strong>
-            <span class="metric-label">public repositories</span>
+            <span class="metric-label">repositories scanned</span>
           </div>
           <div class="metric">
             <span class="metric-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
             </span>
             <strong id="language-count"></strong>
-            <span class="metric-label">languages detected</span>
+            <span class="metric-label">languages found</span>
           </div>
         </div>
       </header>
@@ -237,7 +237,7 @@
 
       document.querySelector("#repository-count").textContent = profile.repositoryCount;
       document.querySelector("#language-count").textContent = profile.languages.length;
-      document.querySelector("#updated").textContent = `Languages measured across ${profile.languageRepositoryCount} original repositories · ${profile.updatedLabel}`;
+      document.querySelector("#updated").textContent = `Measured across ${profile.languageRepositoryCount} repositories · ${profile.updatedLabel}`;
 
       for (const language of profile.languages) {
         const segment = document.createElement("span");
