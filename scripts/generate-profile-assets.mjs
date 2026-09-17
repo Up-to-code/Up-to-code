@@ -1,5 +1,6 @@
 import { copyFile, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 const owner = process.env.GITHUB_REPOSITORY_OWNER || "Up-to-code";
 const token = process.env.GITHUB_TOKEN;
@@ -7,6 +8,21 @@ const token = process.env.GITHUB_TOKEN;
 const outputDirectory = path.resolve("generated");
 const iconDirectory = path.join(outputDirectory, "icons");
 const readmePath = path.resolve("README.md");
+const cachedProfilePath = path.join(outputDirectory, "languages.json");
+
+export function isRateLimitError(error) {
+  const message = String(error?.message ?? error ?? "");
+  return /rate limit exceeded|429|403.*rate/i.test(message);
+}
+
+export async function readCachedProfile(filePath = cachedProfilePath) {
+  try {
+    const raw = await readFile(filePath, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
 
 const languageIcons = {
   Astro: "astro/astro-original.svg",
@@ -156,29 +172,46 @@ async function copyLanguageIcons(languages) {
 
 async function main() {
   await mkdir(outputDirectory, { recursive: true });
-  const [account, repositories] = await Promise.all([github(`/users/${owner}`), getOwnedRepositories()]);
-  const languageResults = await mapWithConcurrency(repositories, 8, (repository) => github(`/repos/${owner}/${repository.name}/languages`));
-  const totals = new Map();
 
-  languageResults.forEach((languages) => {
-    Object.entries(languages).forEach(([name, bytes]) => totals.set(name, (totals.get(name) || 0) + bytes));
-  });
+  let profile;
+  let repositoryCount = 0;
+  let repositoryLanguageCount = 0;
 
-  const totalBytes = [...totals.values()].reduce((sum, bytes) => sum + bytes, 0);
-  const updatedAt = new Date().toISOString().slice(0, 10);
-  const profile = {
-    owner,
-    updatedAt,
-    updatedLabel: new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${updatedAt}T00:00:00Z`)),
-    repositoryCount: account.public_repos,
-    languageRepositoryCount: repositories.length,
-    languages: [...totals.entries()]
-      .map(([name, bytes]) => {
-        const percentage = (bytes / totalBytes) * 100;
-        return { name, icon: `./icons/${iconName(name)}`, bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
-      })
-      .sort((a, b) => b.bytes - a.bytes),
-  };
+  try {
+    const [account, repositories] = await Promise.all([github(`/users/${owner}`), getOwnedRepositories()]);
+    const languageResults = await mapWithConcurrency(repositories, 8, (repository) => github(`/repos/${owner}/${repository.name}/languages`));
+    const totals = new Map();
+
+    languageResults.forEach((languages) => {
+      Object.entries(languages).forEach(([name, bytes]) => totals.set(name, (totals.get(name) || 0) + bytes));
+    });
+
+    const totalBytes = [...totals.values()].reduce((sum, bytes) => sum + bytes, 0);
+    const updatedAt = new Date().toISOString().slice(0, 10);
+    profile = {
+      owner,
+      updatedAt,
+      updatedLabel: new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(`${updatedAt}T00:00:00Z`)),
+      repositoryCount: account.public_repos,
+      languageRepositoryCount: repositories.length,
+      languages: [...totals.entries()]
+        .map(([name, bytes]) => {
+          const percentage = (bytes / totalBytes) * 100;
+          return { name, icon: `./icons/${iconName(name)}`, bytes, percentage, label: formatPercentage(percentage), color: colorFor(name) };
+        })
+        .sort((a, b) => b.bytes - a.bytes),
+    };
+    repositoryCount = account.public_repos;
+    repositoryLanguageCount = repositories.length;
+  } catch (error) {
+    if (!isRateLimitError(error)) throw error;
+
+    const cached = await readCachedProfile();
+    if (!cached) throw error;
+
+    profile = cached;
+    console.warn("GitHub API rate limit reached; using the latest cached language profile from generated/languages.json.");
+  }
 
   await copyLanguageIcons(profile.languages);
 
@@ -188,10 +221,19 @@ async function main() {
   await writeFile(path.join(outputDirectory, "languages.json"), `${JSON.stringify(profile, null, 2)}\n`);
   await writeFile(path.join(outputDirectory, "languages.html"), html);
   await updateReadme(profile);
-  console.log(`Generated HTML profile data for ${account.public_repos} public repositories; languages use ${repositories.length} original repositories.`);
+
+  if (repositoryCount || repositoryLanguageCount) {
+    console.log(`Generated HTML profile data for ${repositoryCount} public repositories; languages use ${repositoryLanguageCount} original repositories.`);
+  } else {
+    console.log(`Generated HTML profile using cached data for ${profile.repositoryCount} repositories.`);
+  }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+const isDirectExecution = process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1]);
+
+if (isDirectExecution) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}
