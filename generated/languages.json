@@ -1,7 +1,7 @@
 {
   "owner": "Up-to-code",
-  "updatedAt": "2026-09-23",
-  "updatedLabel": "Sep 23, 2026",
+  "updatedAt": "2026-09-24",
+  "updatedLabel": "Sep 24, 2026",
   "repositoryCount": 260,
   "languageRepositoryCount": 260,
   "languages": [
@@ -9,7 +9,7 @@
       "name": "TypeScript",
       "icon": "./icons/typescript.svg",
       "bytes": 553931069,
-      "percentage": 66.57430095652639,
+      "percentage": 66.57430143660102,
       "label": "66.57%",
       "color": "#3178c6"
     },
@@ -17,15 +17,15 @@
       "name": "Rust",
       "icon": "./icons/rust.svg",
       "bytes": 171513658,
-      "percentage": 20.61339853433413,
+      "percentage": 20.613398682979625,
       "label": "20.61%",
       "color": "#dea584"
     },
     {
       "name": "HTML",
       "icon": "./icons/html.svg",
-      "bytes": 47865235,
-      "percentage": 5.7526915144831134,
+      "bytes": 47865229,
+      "percentage": 5.752690834855368,
       "label": "5.75%",
       "color": "#e34c26"
     },
@@ -33,7 +33,7 @@
       "name": "MDX",
       "icon": "./icons/mdx.svg",
       "bytes": 18701061,
-      "percentage": 2.247590238019955,
+      "percentage": 2.2475902542275765,
       "label": "2.25%",
       "color": "hsl(233 62% 48%)"
     },
@@ -41,7 +41,7 @@
       "name": "CSS",
       "icon": "./icons/css.svg",
       "bytes": 14240550,
-      "percentage": 1.7115029550481158,
+      "percentage": 1.7115029673899527,
       "label": "1.71%",
       "color": "#663399"
     },
@@ -49,7 +49,7 @@
       "name": "JavaScript",
       "icon": "./icons/javascript.svg",
       "bytes": 10396345,
-      "percentage": 1.2494865148607115,
+      "percentage": 1.2494865238708968,
       "label": "1.25%",
       "color": "#f1e05a"
     },
@@ -57,7 +57,7 @@
       "name": "Twig",
       "icon": "./icons/twig.svg",
       "bytes": 3319107,
-      "percentage": 0.39890744659587496,
+      "percentage": 0.3989074494724406,
       "label": "0.40%",
       "color": "hsl(81 62% 48%)"
     },
@@ -65,7 +65,7 @@
       "name": "Shell",
       "icon": "./icons/shell.svg",
       "bytes": 1778298,
-      "percentage": 0.21372505148720763,
+      "percentage": 0.21372505302840258,
       "label": "0.21%",
       "color": "#89e051"
     },
@@ -73,7 +73,7 @@
       "name": "SCSS",
       "icon": "./icons/scss.svg",
       "bytes": 1773085,
-      "percentage": 0.21309852618413536,
+      "percentage": 0.21309852772081234,
       "label": "0.21%",
       "color": "#c6538c"
     },
@@ -81,7 +81,7 @@
       "name": "Python",
       "icon": "./icons/python.svg",
       "bytes": 1678428,
-      "percentage": 0.20172215833205173,
+      "percentage": 0.20172215978669247,
       "label": "0.20%",
       "color": "#3572a5"
     },
@@ -89,7 +89,7 @@
       "name": "C++",
       "icon": "./icons/cpp.svg",
       "bytes": 1551077,
-      "percentage": 0.18641645645759233,
+      "percentage": 0.18641645780186197,
       "label": "0.19%",
       "color": "#f34b7d"
     },
@@ -97,7 +97,7 @@
       "name": "C",
       "icon": "./icons/c.svg",
       "bytes": 1249131,
-      "percentage": 0.15012702442968903,
+      "percentage": 0.15012702551227158,
       "label": "0.15%",
       "color": "#555555"
     },
@@ -105,7 +105,7 @@
       "name": "CMake",
       "icon": "./icons/cmake.svg",
       "bytes": 872650,
-      "percentage": 0.10487959058623005,
+      "percentage": 0.10487959134252835,
       "label": "0.10%",
       "color": "#da3434"
     },
@@ -113,7 +113,7 @@
       "name": "PowerShell",
       "icon": "./icons/powershell.svg",
       "bytes": 734763,
-      "percentage": 0.08830761773667582,
+      "percentage": 0.0883076183734718,
       "label": "0.09%",
       "color": "#012456"
     },
@@ -121,7 +121,7 @@
       "name": "Inno Setup",
       "icon": "./icons/inno-setup.svg",
       "bytes": 672308,
-      "percentage": 0.08080145280220839,
+      "percentage": 0.08080145338487658,
       "label": "0.08%",
       "color": "hsl(219 62% 48%)"
     },
@@ -129,7 +129,7 @@
       "name": "Jupyter Notebook",
       "icon": "./icons/jupyter-notebook.svg",
       "bytes": 477181,
-      "percentage": 0.05735008069160355,
+      "percentage": 0.057350081105161314,
       "label": "0.06%",
       "color": "hsl(214 62% 48%)"
     },
@@ -137,7 +137,7 @@
       "name": "Scilab",
       "icon": "./icons/scilab.svg",
       "bytes": 405784,
-      "percentage": 0.04876921994664846,
+      "percentage": 0.04876922029832868,
       "label": "0.05%",
       "color": "hsl(20 62% 48%)"
     },
@@ -145,7 +145,7 @@
       "name": "Dockerfile",
       "icon": "./icons/dockerfile.svg",
       "bytes": 176886,
-      "percentage": 0.02125907438312713,
+      "percentage": 0.02125907453642866,
       "label": "0.02%",
       "color": "#384d54"
     },
@@ -153,7 +153,7 @@
       "name": "Swift",
       "icon": "./icons/swift.svg",
       "bytes": 142632,
-      "percentage": 0.01714225149200156,
+      "percentage": 0.017142251615616232,
       "label": "0.02%",
       "color": "#f05138"
     },
@@ -161,7 +161,7 @@
       "name": "GDScript",
       "icon": "./icons/gdscript.svg",
       "bytes": 80144,
-      "percentage": 0.009632120446849048,
+      "percentage": 0.009632120516307331,
       "label": "<0.01%",
       "color": "hsl(344 62% 48%)"
     },
@@ -169,7 +169,7 @@
       "name": "Assembly",
       "icon": "./icons/assembly.svg",
       "bytes": 70788,
-      "percentage": 0.008507667975039308,
+      "percentage": 0.00850766803638904,
       "label": "<0.01%",
       "color": "hsl(182 62% 48%)"
     },
@@ -177,7 +177,7 @@
       "name": "Batchfile",
       "icon": "./icons/batchfile.svg",
       "bytes": 69493,
-      "percentage": 0.008352028176942515,
+      "percentage": 0.008352028237169911,
       "label": "<0.01%",
       "color": "hsl(286 62% 48%)"
     },
@@ -185,7 +185,7 @@
       "name": "PHP",
       "icon": "./icons/php.svg",
       "bytes": 39388,
-      "percentage": 0.00473385356558807,
+      "percentage": 0.00473385359972441,
       "label": "<0.01%",
       "color": "#4f5d95"
     },
@@ -193,7 +193,7 @@
       "name": "Tree-sitter Query",
       "icon": "./icons/tree-sitter-query.svg",
       "bytes": 28520,
-      "percentage": 0.0034276811132977494,
+      "percentage": 0.0034276811380151363,
       "label": "<0.01%",
       "color": "hsl(18 62% 48%)"
     },
@@ -201,7 +201,7 @@
       "name": "C#",
       "icon": "./icons/c.svg",
       "bytes": 27797,
-      "percentage": 0.003340787233742551,
+      "percentage": 0.003340787257833336,
       "label": "<0.01%",
       "color": "#178600"
     },
@@ -209,7 +209,7 @@
       "name": "Ruby",
       "icon": "./icons/ruby.svg",
       "bytes": 25758,
-      "percentage": 0.003095729667472771,
+      "percentage": 0.00309572968979642,
       "label": "<0.01%",
       "color": "#701516"
     },
@@ -217,7 +217,7 @@
       "name": "Kotlin",
       "icon": "./icons/kotlin.svg",
       "bytes": 21860,
-      "percentage": 0.002627247865942805,
+      "percentage": 0.0026272478848881797,
       "label": "<0.01%",
       "color": "#a97bff"
     },
@@ -225,7 +225,7 @@
       "name": "Mermaid",
       "icon": "./icons/mermaid.svg",
       "bytes": 19352,
-      "percentage": 0.002325823453875808,
+      "percentage": 0.0023258234706475776,
       "label": "<0.01%",
       "color": "hsl(297 62% 48%)"
     },
@@ -233,7 +233,7 @@
       "name": "HCL",
       "icon": "./icons/hcl.svg",
       "bytes": 19327,
-      "percentage": 0.00232281882456892,
+      "percentage": 0.002322818841319023,
       "label": "<0.01%",
       "color": "hsl(65 62% 48%)"
     },
@@ -241,7 +241,7 @@
       "name": "Wolfram Language",
       "icon": "./icons/wolfram-language.svg",
       "bytes": 15479,
-      "percentage": 0.0018603462816527301,
+      "percentage": 0.0018603462950678926,
       "label": "<0.01%",
       "color": "hsl(92 62% 48%)"
     },
@@ -249,7 +249,7 @@
       "name": "Makefile",
       "icon": "./icons/makefile.svg",
       "bytes": 14740,
-      "percentage": 0.001771529439341123,
+      "percentage": 0.0017715294521158172,
       "label": "<0.01%",
       "color": "#427819"
     },
@@ -257,7 +257,7 @@
       "name": "Go",
       "icon": "./icons/go.svg",
       "bytes": 13485,
-      "percentage": 0.001620697048135349,
+      "percentage": 0.0016206970598223742,
       "label": "<0.01%",
       "color": "#00add8"
     },
@@ -265,7 +265,7 @@
       "name": "Roff",
       "icon": "./icons/roff.svg",
       "bytes": 13472,
-      "percentage": 0.0016191346408957672,
+      "percentage": 0.0016191346525715258,
       "label": "<0.01%",
       "color": "hsl(37 62% 48%)"
     },
@@ -273,7 +273,7 @@
       "name": "Java",
       "icon": "./icons/java.svg",
       "bytes": 11576,
-      "percentage": 0.0013912635542613866,
+      "percentage": 0.0013912635642939417,
       "label": "<0.01%",
       "color": "#b07219"
     },
@@ -281,7 +281,7 @@
       "name": "Groovy",
       "icon": "./icons/groovy.svg",
       "bytes": 7856,
-      "percentage": 0.0009441747133964629,
+      "percentage": 0.000944174720205011,
       "label": "<0.01%",
       "color": "hsl(166 62% 48%)"
     },
@@ -289,7 +289,7 @@
       "name": "Handlebars",
       "icon": "./icons/handlebars.svg",
       "bytes": 7847,
-      "percentage": 0.0009430930468459831,
+      "percentage": 0.0009430930536467313,
       "label": "<0.01%",
       "color": "hsl(336 62% 48%)"
     },
@@ -297,7 +297,7 @@
       "name": "Go Template",
       "icon": "./icons/go-template.svg",
       "bytes": 7607,
-      "percentage": 0.000914248605499859,
+      "percentage": 0.0009142486120926067,
       "label": "<0.01%",
       "color": "hsl(282 62% 48%)"
     },
@@ -305,7 +305,7 @@
       "name": "Linker Script",
       "icon": "./icons/linker-script.svg",
       "bytes": 7431,
-      "percentage": 0.000893096015179368,
+      "percentage": 0.0008930960216195819,
       "label": "<0.01%",
       "color": "hsl(124 62% 48%)"
     },
@@ -313,7 +313,7 @@
       "name": "Cuda",
       "icon": "./icons/cuda.svg",
       "bytes": 7268,
-      "percentage": 0.0008735058320984588,
+      "percentage": 0.0008735058383974058,
       "label": "<0.01%",
       "color": "hsl(231 62% 48%)"
     },
@@ -321,7 +321,7 @@
       "name": "Astro",
       "icon": "./icons/astro.svg",
       "bytes": 6429,
-      "percentage": 0.0007726704725592998,
+      "percentage": 0.000772670478131112,
       "label": "<0.01%",
       "color": "#ff5a03"
     },
@@ -329,7 +329,7 @@
       "name": "Julia",
       "icon": "./icons/julia.svg",
       "bytes": 6076,
-      "percentage": 0.0007302451067460423,
+      "percentage": 0.0007302451120119204,
       "label": "<0.01%",
       "color": "hsl(201 62% 48%)"
     },
@@ -337,7 +337,7 @@
       "name": "Perl",
       "icon": "./icons/perl.svg",
       "bytes": 3864,
-      "percentage": 0.0004643955056725983,
+      "percentage": 0.0004643955090214056,
       "label": "<0.01%",
       "color": "hsl(343 62% 48%)"
     },
@@ -345,7 +345,7 @@
       "name": "Nix",
       "icon": "./icons/nix.svg",
       "bytes": 3625,
-      "percentage": 0.00043567124949874973,
+      "percentage": 0.0004356712526404232,
       "label": "<0.01%",
       "color": "hsl(213 62% 48%)"
     },
@@ -353,7 +353,7 @@
       "name": "TeX",
       "icon": "./icons/tex.svg",
       "bytes": 3204,
-      "percentage": 0.00038507329197075697,
+      "percentage": 0.000385073294747563,
       "label": "<0.01%",
       "color": "hsl(63 62% 48%)"
     },
@@ -361,7 +361,7 @@
       "name": "RenderScript",
       "icon": "./icons/renderscript.svg",
       "bytes": 3119,
-      "percentage": 0.00037485755232733803,
+      "percentage": 0.00037485755503047723,
       "label": "<0.01%",
       "color": "hsl(209 62% 48%)"
     },
@@ -369,7 +369,7 @@
       "name": "Objective-C",
       "icon": "./icons/objective-c.svg",
       "bytes": 2774,
-      "percentage": 0.0003333936678922846,
+      "percentage": 0.00033339367029642315,
       "label": "<0.01%",
       "color": "hsl(287 62% 48%)"
     },
@@ -377,7 +377,7 @@
       "name": "Objective-C++",
       "icon": "./icons/objective-c.svg",
       "bytes": 2774,
-      "percentage": 0.0003333936678922846,
+      "percentage": 0.00033339367029642315,
       "label": "<0.01%",
       "color": "hsl(239 62% 48%)"
     },
@@ -385,7 +385,7 @@
       "name": "Dart",
       "icon": "./icons/dart.svg",
       "bytes": 2610,
-      "percentage": 0.0003136832996390998,
+      "percentage": 0.0003136833019011047,
       "label": "<0.01%",
       "color": "#00b4ab"
     },
@@ -393,7 +393,7 @@
       "name": "Just",
       "icon": "./icons/just.svg",
       "bytes": 2565,
-      "percentage": 0.00030827496688670155,
+      "percentage": 0.0003082749691097063,
       "label": "<0.01%",
       "color": "hsl(92 62% 48%)"
     },
@@ -401,7 +401,7 @@
       "name": "XSLT",
       "icon": "./icons/xslt.svg",
       "bytes": 2439,
-      "percentage": 0.0002931316351799864,
+      "percentage": 0.00029313163729379095,
       "label": "<0.01%",
       "color": "hsl(211 62% 48%)"
     },
@@ -409,7 +409,7 @@
       "name": "Clojure",
       "icon": "./icons/clojure.svg",
       "bytes": 2412,
-      "percentage": 0.00028988663552854737,
+      "percentage": 0.00028988663761895194,
       "label": "<0.01%",
       "color": "hsl(20 62% 48%)"
     },
@@ -417,7 +417,7 @@
       "name": "Emacs Lisp",
       "icon": "./icons/emacs-lisp.svg",
       "bytes": 2222,
-      "percentage": 0.0002670514527961991,
+      "percentage": 0.0002670514547219366,
       "label": "<0.01%",
       "color": "hsl(161 62% 48%)"
     },
@@ -425,7 +425,7 @@
       "name": "PLpgSQL",
       "icon": "./icons/plpgsql.svg",
       "bytes": 2203,
-      "percentage": 0.0002647679345229643,
+      "percentage": 0.00026476793643223515,
       "label": "<0.01%",
       "color": "hsl(339 62% 48%)"
     },
@@ -433,7 +433,7 @@
       "name": "Less",
       "icon": "./icons/less.svg",
       "bytes": 2058,
-      "percentage": 0.0002473410845430143,
+      "percentage": 0.0002473410863266182,
       "label": "<0.01%",
       "color": "hsl(17 62% 48%)"
     },
@@ -441,7 +441,7 @@
       "name": "Visual Basic .NET",
       "icon": "./icons/visual-basic-net.svg",
       "bytes": 1786,
-      "percentage": 0.00021465071768407364,
+      "percentage": 0.00021465071923194368,
       "label": "<0.01%",
       "color": "hsl(145 62% 48%)"
     },
@@ -449,7 +449,7 @@
       "name": "Qt Script",
       "icon": "./icons/qt-script.svg",
       "bytes": 1661,
-      "percentage": 0.000199627571149634,
+      "percentage": 0.00019962757258917043,
       "label": "<0.01%",
       "color": "hsl(328 62% 48%)"
     },
@@ -457,7 +457,7 @@
       "name": "Raku",
       "icon": "./icons/raku.svg",
       "bytes": 1522,
-      "percentage": 0.00018292183220333712,
+      "percentage": 0.00018292183352240665,
       "label": "<0.01%",
       "color": "hsl(73 62% 48%)"
     },
@@ -465,7 +465,7 @@
       "name": "Pug",
       "icon": "./icons/pug.svg",
       "bytes": 1308,
-      "percentage": 0.00015720220533637643,
+      "percentage": 0.00015720220646997892,
       "label": "<0.01%",
       "color": "hsl(330 62% 48%)"
     },
@@ -473,7 +473,7 @@
       "name": "F#",
       "icon": "./icons/f.svg",
       "bytes": 1268,
-      "percentage": 0.00015239479844535576,
+      "percentage": 0.00015239479954429146,
       "label": "<0.01%",
       "color": "hsl(45 62% 48%)"
     },
@@ -481,7 +481,7 @@
       "name": "CoffeeScript",
       "icon": "./icons/coffeescript.svg",
       "bytes": 1180,
-      "percentage": 0.00014181850328511025,
+      "percentage": 0.00014181850430777915,
       "label": "<0.01%",
       "color": "hsl(63 62% 48%)"
     },
@@ -489,7 +489,7 @@
       "name": "RPC",
       "icon": "./icons/rpc.svg",
       "bytes": 863,
-      "percentage": 0.0001037198036737713,
+      "percentage": 0.00010371980442170626,
       "label": "<0.01%",
       "color": "hsl(349 62% 48%)"
     },
@@ -497,7 +497,7 @@
       "name": "R",
       "icon": "./icons/r.svg",
       "bytes": 724,
-      "percentage": 0.00008701406472747443,
+      "percentage": 0.00008701406535494245,
       "label": "<0.01%",
       "color": "hsl(82 62% 48%)"
     },
@@ -505,7 +505,7 @@
       "name": "ShaderLab",
       "icon": "./icons/shaderlab.svg",
       "bytes": 660,
-      "percentage": 0.00007932221370184132,
+      "percentage": 0.00007932221427384256,
       "label": "<0.01%",
       "color": "hsl(336 62% 48%)"
     },
@@ -513,7 +513,7 @@
       "name": "Lua",
       "icon": "./icons/lua.svg",
       "bytes": 504,
-      "percentage": 0.00006057332682686065,
+      "percentage": 0.000060573327263661596,
       "label": "<0.01%",
       "color": "hsl(80 62% 48%)"
     },
@@ -521,7 +521,7 @@
       "name": "HLSL",
       "icon": "./icons/hlsl.svg",
       "bytes": 368,
-      "percentage": 0.000044228143397390314,
+      "percentage": 0.00004422814371632434,
       "label": "<0.01%",
       "color": "hsl(157 62% 48%)"
     },
@@ -529,7 +529,7 @@
       "name": "NSIS",
       "icon": "./icons/nsis.svg",
       "bytes": 314,
-      "percentage": 0.00003773814409451239,
+      "percentage": 0.00003773814436664631,
       "label": "<0.01%",
       "color": "hsl(287 62% 48%)"
     },
@@ -537,7 +537,7 @@
       "name": "QML",
       "icon": "./icons/qml.svg",
       "bytes": 252,
-      "percentage": 0.000030286663413430325,
+      "percentage": 0.000030286663631830798,
       "label": "<0.01%",
       "color": "hsl(24 62% 48%)"
     },
@@ -545,7 +545,7 @@
       "name": "LLVM",
       "icon": "./icons/llvm.svg",
       "bytes": 144,
-      "percentage": 0.000017306664807674473,
+      "percentage": 0.000017306664932474743,
       "label": "<0.01%",
       "color": "hsl(255 62% 48%)"
     },
@@ -553,7 +553,7 @@
       "name": "Hack",
       "icon": "./icons/hack.svg",
       "bytes": 32,
-      "percentage": 0.000003845925512816549,
+      "percentage": 0.000003845925540549943,
       "label": "<0.01%",
       "color": "hsl(345 62% 48%)"
     }
