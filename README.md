@@ -10,6 +10,7 @@ Software engineer building applications, developer tools, and applied AI systems
 | --- | --- |
 | [Qesh](https://github.com/qentrah/qesh) | macOS terminal workspace with real shells, split sessions, themes, and a project CLI. |
 | [Kyna](https://github.com/qentrah/Kyna) | Programming language with compiler, runtime, package manager, and editor tooling. |
+| [QH Pixels](https://github.com/qentrah/qh-pixels) | Agent-authored pixel animation, a local preview studio, and a free motion pack. [Website](https://qentrah.com/qh-pixels). |
 | [QH Motion Studio](https://github.com/Up-to-code/QH-Motion-Studio) | Local layered raster animation studio with a rig engine, CLI, and agent integration. |
 | [Sater](https://github.com/qentrah/sater) | Arabic-first development environment based on Code - OSS. |
 | [DodoMath](https://github.com/Up-to-code/DodoMath) | Mathematics learning application. |
@@ -23,17 +24,27 @@ Software engineer building applications, developer tools, and applied AI systems
 
 Each project documents its own setup and license. For released products and guides, visit [qentrah.com](https://qentrah.com).
 
-## Language footprint
+## Languages
 
-The animated profile below is generated from language bytes across my GitHub repositories.
-
+<!-- LANGUAGE_PROFILE_START -->
 <picture>
-	<source media="(prefers-color-scheme: dark)" srcset="./generated/languages-dark.png" />
-	<source media="(prefers-color-scheme: light)" srcset="./generated/languages-light.png" />
-	<img width="100%" alt="Ahmed Mansour language footprint" src="./generated/languages-light.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="./generated/languages-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./generated/languages-light.svg" />
+  <img width="800" height="14" alt="Language distribution by source bytes; percentages are listed below" src="./generated/languages-light.svg" />
 </picture>
 
-<sub><a href="./generated/languages.json">View the full language data</a>.</sub>
+| Language | Share of source bytes |
+| --- | ---: |
+| TypeScript | 48.05% |
+| Rust | 27.95% |
+| HTML | 17.38% |
+| MDX | 2.24% |
+| CSS | 1.45% |
+| JavaScript | 1.11% |
+| Other | 1.82% |
+
+<sub>259 repositories · Oct 13, 2026 · <a href="./generated/languages.json">Full data</a></sub>
+<!-- LANGUAGE_PROFILE_END -->
 
 ## Tools I use
 

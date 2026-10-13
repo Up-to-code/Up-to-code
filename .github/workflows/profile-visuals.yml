@@ -7,7 +7,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ReadMe.md
+      - README.md
       - languages/**
       - package.json
       - package-lock.json
@@ -36,12 +36,9 @@ jobs:
           node-version: 20
           cache: npm
 
-      - name: Install renderer
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install --yes ffmpeg
           npm ci
-          npx playwright install --with-deps chromium
 
       - name: Generate profile assets
         run: npm run generate
@@ -52,7 +49,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/
+          git add generated/ README.md
           git diff --cached --quiet && exit 0
           git commit -m "chore: refresh profile visuals [skip ci]"
           git push
