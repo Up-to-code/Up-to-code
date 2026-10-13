@@ -35,15 +35,15 @@ Each project documents its own setup and license. For released products and guid
 
 | Language | Share of source bytes |
 | --- | ---: |
-| TypeScript | 48.05% |
+| TypeScript | 48.04% |
 | Rust | 27.95% |
-| HTML | 17.38% |
+| HTML | 17.37% |
 | MDX | 2.24% |
-| CSS | 1.45% |
-| JavaScript | 1.11% |
+| CSS | 1.44% |
+| JavaScript | 1.14% |
 | Other | 1.82% |
 
-<sub>259 repositories · Oct 13, 2026 · <a href="./generated/languages.json">Full data</a></sub>
+<sub>235 repositories · Oct 13, 2026 · <a href="./generated/languages.json">Full data</a></sub>
 <!-- LANGUAGE_PROFILE_END -->
 
 ## Tools I use
