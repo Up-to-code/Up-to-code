@@ -1,39 +1,27 @@
-<div align="center">
-
 # Ahmed Mansour
 
-**Agentic engineer building products, intelligent systems, and developer tools.**
+Software engineer building applications, developer tools, and applied AI systems, with a focus on Arabic-first experiences.
 
-[CV](https://ahmed.qentrah.com/) · [GitHub](https://github.com/Up-to-code) · [X](https://x.com/uptocodejs) · [WhatsApp](https://wa.me/201142102700)
-
-</div>
-
----
-
-I build software from idea to production. My work sits at the intersection of product engineering, AI, and developer infrastructure, with a particular interest in Arabic-first experiences.
-
-## Now building
-
-### [Kyna](https://github.com/Up-to-code/Kyna)
-
-A programming language built from the ground up: compiler, bytecode VM, CLI, package manager, and editor tooling.
-
-[Documentation](https://up-to-code.github.io/kyna-docs/) · [Source](https://github.com/Up-to-code/Kyna)
-
-### [Sater](https://github.com/Up-to-code/sater)
-
-An Arabic-first development environment based on Code - OSS, designed for working naturally in Arabic and English.
-
-[Website](https://sater.cc) · [Source](https://github.com/Up-to-code/sater)
+[Portfolio & CV](https://ahmed.qentrah.com/) · [Qentrah](https://qentrah.com) · [Public project directory](https://github.com/qentrah/.github/blob/main/profile/PROJECTS.md) · [X](https://x.com/uptocodejs)
 
 ## Selected work
 
-- **[W-AI](https://github.com/Up-to-code/w-ai)** - AI website builder platform.
-- **[Real Estate CRM](https://github.com/Up-to-code/Real-Estate-CRM-System)** - Property management SaaS.
-- **[Form Builder](https://github.com/Up-to-code/form-builder)** - Drag-and-drop forms with validation and exports.
-- **[WhatsApp API kit](https://github.com/Up-to-code/WhatsApp-Meta-Business-API-Handler)** - TypeScript tooling for the WhatsApp Cloud API.
-- **[Instagram API kit](https://github.com/Up-to-code/Instagram-Meta-Business-API-Handler)** - Graph API integrations for posts, stories, messages, and analytics.
-- **[OpenAI wrapper](https://github.com/Up-to-code/AI-Model-Wrapper-for-OpenAI)** - Conversation state, streaming, and logging for OpenAI applications.
+| Project | What it does |
+| --- | --- |
+| [Qesh](https://github.com/qentrah/qesh) | macOS terminal workspace with real shells, split sessions, themes, and a project CLI. |
+| [Kyna](https://github.com/qentrah/Kyna) | Programming language with compiler, runtime, package manager, and editor tooling. |
+| [QH Motion Studio](https://github.com/Up-to-code/QH-Motion-Studio) | Local layered raster animation studio with a rig engine, CLI, and agent integration. |
+| [Sater](https://github.com/qentrah/sater) | Arabic-first development environment based on Code - OSS. |
+| [DodoMath](https://github.com/Up-to-code/DodoMath) | Mathematics learning application. |
+| [Gogoiy](https://github.com/Up-to-code/Gogoiy) | Native iOS block-placement puzzle built with SwiftUI and SpriteKit. |
+| [DUI](https://github.com/qentrah/DUI) | React components delivered as source through a shadcn registry. |
+| [QChat](https://github.com/qentrah/qchat) | Generative UI compiler and React chat runtime. |
+
+## Explore the ecosystem
+
+[Qentrah](https://github.com/qentrah) houses the public product and tooling repositories. [UpToCodeJS](https://github.com/uptocodejs) is part of the same project ecosystem. The [source directory](https://github.com/qentrah/.github/blob/main/profile/PROJECTS.md) brings public applications, libraries, experiments, and credited forks together.
+
+Each project documents its own setup and license. For released products and guides, visit [qentrah.com](https://qentrah.com).
 
 ## Language footprint
 
@@ -49,10 +37,8 @@ The animated profile below is generated from language bytes across my GitHub rep
 
 ## Tools I use
 
-`TypeScript` `JavaScript` `React` `Next.js` `Node.js` `React Native` `Expo` `C++` `Python` `OpenAI APIs`
+TypeScript, JavaScript, React, Next.js, Node.js, React Native, Expo, C++, Python, and AI APIs.
 
 ## Get in touch
 
-I am available for product engineering, AI integrations, developer tooling, and technical collaboration.
-
-[View my CV](https://ahmed.qentrah.com/) · [Browse my repositories](https://github.com/Up-to-code?tab=repositories&type=source)
+For product engineering, AI integrations, developer tooling, and technical collaboration, [view my portfolio](https://ahmed.qentrah.com/) or [contact me](https://wa.me/201142102700).
