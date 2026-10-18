@@ -43,7 +43,7 @@ Each project documents its own setup and license. For released products and guid
 | JavaScript | 1.14% |
 | Other | 1.82% |
 
-<sub>235 repositories · Oct 17, 2026 · <a href="./generated/languages.json">Full data</a></sub>
+<sub>235 repositories · Oct 18, 2026 · <a href="./generated/languages.json">Full data</a></sub>
 <!-- LANGUAGE_PROFILE_END -->
 
 ## Tools I use
